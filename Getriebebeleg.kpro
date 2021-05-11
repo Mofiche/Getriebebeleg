@@ -1,0 +1,26 @@
+<KISSsoft filetype="projectfile">
+ <properties>
+  <description>MEIII Beleg</description>
+  <customer>Prof. Fischer</customer>
+  <standards used="false"/>
+  <created>
+   <by>Moritz</by>
+   <date format="dd.MM.yyyy">27.04.2021</date>
+   <time format="hh:mm:ss">15:29:30</time>
+  </created>
+  <updated>
+   <by/>
+   <date format="dd.MM.yyyy"/>
+   <time format="hh:mm:ss"/>
+  </updated>
+  <comment/>
+ </properties>
+ <files>
+  <file>ZR_Paar_2.Z12</file>
+  <file>ZR_Paar_1.Z12</file>
+  <file>Passfeder_Eingang.M2A</file>
+  <file>Zwischenwelle.W10</file>
+  <file>Ausgangswelle.W10</file>
+  <file>Eingangswelle.W10</file>
+ </files>
+</KISSsoft>
