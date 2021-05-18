@@ -1,0 +1,55 @@
+\documentclass[12pt,a4paper]{article}
+\usepackage[ngerman]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{amsthm}
+\usepackage{tikz}
+\usepackage{stanli}
+\usetikzlibrary{shapes}
+\usetikzlibrary{plotmarks}
+
+\setlength{\parindent}{0px}
+\newcommand{\du}[1]{\underline{\underline{#1}}}
+\newcommand{\under}[1]{\underline{#1}}
+\begin{document}
+\tableofcontents
+\newpage
+
+\section{Zeichnungsdokumentation}
+\subsection{Zusammenbauzeichnungen}
+\subsection{Fertigungszeichnung Zwischenwelle}
+\subsection{Stückliste}
+\section{Montageanleitung}
+\section{Berechnung}
+\subsection{Entwurfsrechnung per Hand}
+Berechnung Antriebsmoment:
+\begin{align*}
+P &= M \cdot \omega \\
+P &= M \cdot 2\pi \cdot n \\ \\ 
+M_t &= \frac{P}{2\pi \cdot n} \\
+M_t &= \frac{40 kW}{2\pi \cdot \frac{950 \ {min}^{-1}}{60}} \\ 
+M_t &= \underline{402,07565 Nm} \\
+\end{align*}
+\subsubsection{Überschlägiger Wellendurchmesser}
+Eingangswelle:
+\begin{align*}
+d_{\ddot{u}b} &= \sqrt[3]{\frac{16 \cdot K_A \cdot M_{tA}}{\pi \cdot \tau_{t \ zul}}} \\
+d_{\ddot{u}b} &= \sqrt[3]{\frac{16 \cdot 1,1 \cdot 402,1 Nm}{\pi \cdot 30 MPa}}
+\end{align*}
+\begin{align*}
+d_{\ddot{u}b} &= 123,45 mm \rightarrow \ gew\ddot{a}hlt \ d_{Welle1} = \underline{45 mm}
+\end{align*}
+\subsubsection{Modulabschätzung}
+\subsubsection{Mindestteilkreisdurchmesser}
+\begin{align*}
+d_{1min} \geq d_{Welle1} + 2(t_2 + 2,5 \cdot m_n + 1,25 \cdot m_n)
+\end{align*}
+\subsection{Nachrechnung Antriebswelle per Hand}
+\subsection{Nachrechnung aller Wellen, Welle-Nabe-Verbindung, Zahnradstufen und Lager mittles KissSoft}
+\subsection{Vergleich Handrechnung und KissSoft}
+\subsection{Wirkungsgradabschätzung}
+
+
+\end{document}
