@@ -29,25 +29,178 @@ Berechnung Antriebsmoment:
 P &= M \cdot \omega \\
 P &= M \cdot 2\pi \cdot n \\ \\ 
 M_t &= \frac{P}{2\pi \cdot n} \\
-M_t &= \frac{40 kW}{2\pi \cdot \frac{950 \ {min}^{-1}}{60}} \\ 
+M_t &= \frac{40 kW}{2\pi \cdot \frac{950 \ {min}^{-1}}{60}} \\ \\
 M_t &= \underline{402,07565 Nm} \\
 \end{align*}
 \subsubsection{Überschlägiger Wellendurchmesser}
+\underline{Stufe 1} \\
 Eingangswelle:
 \begin{align*}
 d_{\ddot{u}b} &= \sqrt[3]{\frac{16 \cdot K_A \cdot M_{tA}}{\pi \cdot \tau_{t \ zul}}} \\
-d_{\ddot{u}b} &= \sqrt[3]{\frac{16 \cdot 1,1 \cdot 402,1 Nm}{\pi \cdot 30 MPa}}
+d_{\ddot{u}b} &= \sqrt[3]{\frac{16 \cdot 1,1 \cdot 402,07565 Nm}{\pi \cdot 30 MPa}}
 \end{align*}
 \begin{align*}
-d_{\ddot{u}b} &= 123,45 mm \rightarrow \ gew\ddot{a}hlt \ d_{Welle1} = \underline{45 mm}
+d_{\ddot{u}b} &= 42,188 mm \rightarrow \ gew\ddot{a}hlt \ d_{Welle1} = \underline{43 mm}
+\end{align*}
+\underline{Stufe 2} \\
+Zwischenwelle: \\
+Für Berechnung der Zähnzahlen der ersten Stufe siehe 3.1.5
+\begin{align*}
+M_{tA2} &= i_1 \cdot M_{tA} \\
+M_{tA2} &= \frac{z_2}{z_1} \cdot M_{tA} \\
+M_{tA2} &= \frac{82}{27} \cdot 402,07565 Nm \\
+M_{tA2} &= \underline{1221,11864 Nm} \\ \\
+d_{\ddot{u}b} &= \sqrt[3]{\frac{16 \cdot K_A \cdot M_{tA2}}{\pi \cdot \tau_{t \ zul}}} \\
+d_{\ddot{u}b} &= \sqrt[3]{\frac{16 \cdot 1,1 \cdot 1221,11864 Nm}{\pi \cdot 30 MPa}}
+\end{align*}
+\begin{align*}
+d_{\ddot{u}b} &= 61,094 mm \rightarrow \ gew\ddot{a}hlt \ d_{Welle2} = \underline{62 mm}
 \end{align*}
 \subsubsection{Modulabschätzung}
-\subsubsection{Mindestteilkreisdurchmesser}
+\underline{Stufe 1} \\
+Annahmen für die Modulabschätzung:
+\begin{itemize}
+\item $\beta = 10 ^\circ$
+\item $z_1 = 27$
+\item $S_F = 1,5$
+\item $\sigma_{Flim} = 430 MPa$
+\end{itemize}
 \begin{align*}
-d_{1min} \geq d_{Welle1} + 2(t_2 + 2,5 \cdot m_n + 1,25 \cdot m_n)
+m_n &= \sqrt[3]{\frac{5 \cdot K_A \cdot M_t \cdot cos^2 \beta}{{z_1}^2 \cdot \frac{b}{d_1}} \cdot \frac{S_F}{\sigma_{Flim}}} \\
+m_n &= \sqrt[3]{\frac{5 \cdot 1,1 \cdot 402,07565 Nm \cdot cos^2 (10 ^\circ)}{{27}^2 \cdot 0,6} \cdot \frac{1,5}{430MPa} } \\ \\
+m_n &= 2,57655mm \rightarrow \ gew\ddot{a}hlt \ m_n = \underline{2,5 mm}
+\end{align*}
+\underline{Stufe 2}\\
+Annahmen für die Modulabschätzung:
+\begin{itemize}
+\item $\beta = 10 ^\circ$
+\item $z_3 = 31$
+\item $S_F = 1,5$
+\item $\sigma_{Flim} = 430 MPa$
+\end{itemize}
+\begin{align*}
+m_n &= \sqrt[3]{\frac{5 \cdot K_A \cdot M_t \cdot cos^2 \beta}{{z_3}^2 \cdot \frac{b}{d_1}} \cdot \frac{S_F}{\sigma_{Flim}}} \\
+m_n &= \sqrt[3]{\frac{5 \cdot 1,1 \cdot 1221,11864 Nm \cdot cos^2 (10 ^\circ)}{{31}^2 \cdot 0,6} \cdot \frac{1,5}{430MPa} } \\ \\
+m_n &= 3,40296mm \rightarrow \ gew\ddot{a}hlt \ m_n = \underline{3 mm}
+\end{align*}
+\subsubsection{Mindestteilkreisdurchmesser}
+\underline{Stufe 1} \\
+$t_2 = 3,3mm$ aus II 6/3
+\begin{align*}
+d_{1min} &\geq d_{Welle1} + 2(t_2 + 2,5 \cdot m_n + 1,25 \cdot m_n) \\
+d_{1min} &\geq 43mm + 2(3,3mm + 2,5 \cdot 2,5mm + 1,25 \cdot 2,5mm) \\ \\
+d_{1min} &= \underline{68,35mm}
+\end{align*}
+\underline{Stufe 2} \\
+$t_2 = 4,6mm$ aus II 6/3
+\begin{align*}
+d_{2min} &\geq d_{Welle2} + 2(t_2 + 2,5 \cdot m_n + 1,25 \cdot m_n) \\
+d_{2min} &\geq 62mm + 2(4,6mm + 2,5 \cdot 3mm + 1,25 \cdot 3mm) \\ \\
+d_{2min} &= \underline{93,7mm}
+\end{align*}
+\subsubsection{Mindestzähnezahlen}
+\underline{Stufe 1}
+\begin{align*}
+m_{t1} &= \frac{m_n}{cos \beta} \\
+m_{t1} &= \frac{2,5mm}{cos 10^\circ} \\
+m_{t1} &= 2,53857mm \\ \\
+z_{1min} &= \frac{d_{1min}}{m_t} \\
+z_{1min} &= \frac{68,35mm}{2,53857mm} \\ \\
+z_{1min} &= 26,9 \rightarrow \ gew\ddot{a}hlt \ z_1 = \underline{27}
+\end{align*}
+\underline{Stufe 2}
+\begin{align*}
+m_{t2} &= \frac{m_n}{cos \beta} \\
+m_{t2} &= \frac{3mm}{cos 10^\circ} \\
+m_{t2} &= 3,04628mm \\ \\
+z_{3min} &= \frac{d_{2min}}{m_t} \\
+z_{3min} &= \frac{93,7mm}{3,04628mm} \\ \\
+z_{3min} &= 30,7 \rightarrow \ gew\ddot{a}hlt \ z_3 = \underline{31}
+\end{align*}
+\subsubsection{Aufteilung Übersetzungsverhältnis und Auswahl Zähnezahlen}
+Aus $i_{ges;soll} = i_1 \cdot i_2 $ und $i_2 \approx 0,85 \cdot i_1$ folgt: 
+\begin{align*}
+i_1 \approx \frac{\sqrt{i_{ges}}}{0,85} &= 3,328 \\
+\rightarrow gew\ddot{a}hlt \ i_1 &= 3
+\end{align*}
+\begin{align*}
+i_2 &= \frac{i_{ges}}{i_1} \\
+i_2 &= \frac{8}{3} \\ \\
+z_2 &= i_1 \cdot z_1\\
+z_2 &= 3 \cdot 27 \\
+z_2 &= 81 \rightarrow gew\ddot{a}hlt \ z_2 = \underline{82} \\ \\
+z_4 &= i_2 \cdot z_3 \\
+z_4 &= \frac{8}{3} \cdot 31 \\
+z_4 &= 82,\overline{6} \rightarrow gew\ddot{a}hlt \ z_4 = \underline{83} \\ \\
+\end{align*}
+Es wurde $z_2 = 82$ gewählt,da $27$ und $82$ zueinander teilerfremd sind. Analog wurde die Auswahl für $z_4$ vorgenommen \\
+\begin{center}
+\begin{tabular}[h]{c|c|c}
+\ & Stufe 1 & Stufe 2 \\
+\hline
+Ritzel & $z_1=27$ & $z_3=31$ \\
+Rad & $z_2=82$ & $z_4=83$ \\
+\end{tabular}
+\end{center}
+\begin{align*}
+i_{ges;ist} &= \frac{z_2}{z_1} \cdot \frac{z_4}{z_3} \\
+i_{ges;ist} &= \frac{82}{27} \cdot \frac{83}{31} \\
+i_{ges;ist} &= 8,13142 \\ \\
+\Delta i &= \frac{i_{ges;ist}-i_{ges;soll}}{i_{ges;soll}} \\
+\Delta i &= 0,01643 = \underline{1,643\%} \\ \\
+-3\% &< \Delta i < 3\% \rightarrow i.O.
+\end{align*}
+\subsubsection{Achsabstände}
+\underline{Stufe 1}
+\begin{align*}
+a_{d1} &= m_{t1} \cdot \frac{z_1 + z_2}{2} \\
+a_{d1} &= 2,53857 mm \cdot \frac{27+82}{2} \\
+a_{d1} &= 138,35188 mm \rightarrow gew\ddot{a}hlt \ a_{1} = \underline{140mm} \\ \\
+\end{align*}
+\underline{Stufe 2}
+\begin{align*}
+a_{d2} &= m_{t2} \cdot \frac{z_3 + z_4}{2} \\
+a_{d2} &= 3,04628mm \cdot \frac{31+83}{2} \\
+a_{d2} &= 173,63795 mm \rightarrow gew\ddot{a}hlt \ a_{2} = \underline{175mm} \\ \\
+\end{align*}
+\subsection{Profilverschiebung}
+\begin{align*}
+\alpha_t &= arctan\left(\frac{tan(\alpha_n)}{cos(\beta)}\right) \\
+\alpha_t &= arctan\left(\frac{tan(20^\circ)}{cos(10^\circ)}\right) \\
+\alpha_t &= \underline{20,28356 ^\circ} \\ \\
+\end{align*}
+\underline{Stufe 1}
+\begin{align*}
+\alpha_{wt1} &= arccos\left(\frac{a_{d1}}{a_1} \cdot cos(\alpha_t)\right) \\
+\alpha_{wt1} &= arccos\left(\frac{138,35188mm}{140mm} \cdot cos(20,28356 ^\circ)\right) \\
+\alpha_{wt1} &= 22,03632 ^\circ \\ \\
+{(x_1 + x_2)}_1 &= (z_1 + z_2) \cdot \frac{inv(\alpha_{wt1}) - inv(\alpha_t)}{2 \cdot tan (\alpha_n)} \\
+{(x_1 + x_2)}_1 &= (27 + 82) \cdot \frac{inv(22,03632 ^\circ) - inv(20,28356 ^\circ)}{2 \cdot tan (20 ^\circ)} \\
+{(x_1 + x_2)}_1 &= 0,6868893405 \\
+\end{align*}
+$x_1$ wurde durch Berechnung mit KissSoft so gewählt, dass es zu einem optimalen spezifischem Gleiten kommt
+\begin{align*}
+(x_{1})_1 &= \underline{0,3842} \\ \\
+(x_{2})_1 &= {(x_1 + x_2)}_1 - (x_{1})_1 \\
+(x_{2})_1 &= \underline{0,3026893405}
+\end{align*}
+\underline{Stufe 2}
+\begin{align*}
+\alpha_{wt2} &= arccos\left(\frac{a_{d2}}{a_2} \cdot cos(\alpha_t)\right) \\
+\alpha_{wt2} &= arccos\left(\frac{173,63795mm}{175mm} \cdot cos(20,28356 ^\circ)\right) \\
+\alpha_{wt2} &= 21,45769 ^\circ \\ \\
+{(x_1 + x_2)}_2 &= (z_3 + z_4) \cdot \frac{inv(\alpha_{wt2}) - inv(\alpha_t)}{2 \cdot tan (\alpha_n)} \\
+{(x_1 + x_2)}_2 &= (31 + 83) \cdot \frac{inv(21,45769 ^\circ) - inv(20,28356 ^\circ)}{2 \cdot tan (20 ^\circ)} \\
+{(x_1 + x_2)}_2 &= 0,4667160627 \\
+\end{align*}
+$x_1$ wurde durch Berechnung mit KissSoft so gewählt, dass es zu einem optimalen spezifischem Gleiten kommt
+\begin{align*}
+(x_{1})_2 &= \underline{0,6026} \\ \\
+(x_{2})_2 &= {(x_1 + x_2)}_2 - (x_{1})_2 \\
+(x_{2})_2 &= \underline{-0,1538839373}
 \end{align*}
 \subsection{Nachrechnung Antriebswelle per Hand}
-\subsection{Nachrechnung aller Wellen, Welle-Nabe-Verbindung, Zahnradstufen und Lager mittles KissSoft}
+\subsection{Nachrechnung aller Wellen, Welle-Nabe-Verbindung, Zahnradstufen und Lager mittels KissSoft}
 \subsection{Vergleich Handrechnung und KissSoft}
 \subsection{Wirkungsgradabschätzung}
 

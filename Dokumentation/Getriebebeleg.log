@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (MiKTeX 21.2) (preloaded format=pdflatex 2021.3.6)  18 MAY 2021 09:05
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (MiKTeX 21.2) (preloaded format=pdflatex 2021.3.6)  19 MAY 2021 13:32
 entering extended mode
 **./Getriebebeleg.tex
 (Getriebebeleg.tex
@@ -667,35 +667,43 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 
  [1
 
-{C:/Users/Moritz/AppData/Local/MiKTeX/pdftex/config/pdftex.map}] [2]
-Overfull \hbox (7.49161pt too wide) in paragraph at lines 50--50
+{C:/Users/Moritz/AppData/Local/MiKTeX/pdftex/config/pdftex.map}] [2] [3] [4] [5
+]
+Underfull \hbox (badness 10000) in paragraph at lines 135--137
+
+ []
+
+[6] [7] [8]
+Overfull \hbox (7.49161pt too wide) in paragraph at lines 203--203
 []\T1/cmr/bx/n/14.4 Nachrechnung al-ler Wel-len, Welle-Nabe-Verbindung,
  []
 
-[3] (Getriebebeleg.aux) ) 
+[9] (Getriebebeleg.aux) ) 
 Here is how much of TeX's memory you used:
- 17736 strings out of 479334
- 374501 string characters out of 2864126
- 708199 words of memory out of 3000000
- 34828 multiletter control sequences out of 15000+200000
- 412703 words of font info for 51 fonts, out of 3000000 for 9000
+ 17739 strings out of 479334
+ 374536 string characters out of 2864126
+ 714199 words of memory out of 3000000
+ 34830 multiletter control sequences out of 15000+200000
+ 413040 words of font info for 52 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
  113i,14n,116p,416b,214s stack positions out of 5000i,500n,10000p,200000b,50000s
  <C:\Users\Moritz\AppData\Local\MiKTeX\fonts/pk/ljfour
-/jknappen/ec/dpi600\ecbx1440.pk> <C:\Users\Moritz\AppData\Local\MiKTeX\fonts/pk
-/ljfour/jknappen/ec/dpi600\ecrm1200.pk> <C:\Users\Moritz\AppData\Local\MiKTeX\f
-onts/pk/ljfour/jknappen/ec/dpi600\ecbx1200.pk> <C:\Users\Moritz\AppData\Local\M
-iKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecbx1728.pk><C:/Program Files (x86)/Mi
-kTex/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Program Files (x86)/MikTex/f
-onts/type1/public/amsfonts/cm/cmmi12.pfb><C:/Program Files (x86)/MikTex/fonts/t
-ype1/public/amsfonts/cm/cmmi8.pfb><C:/Program Files (x86)/MikTex/fonts/type1/pu
-blic/amsfonts/cm/cmr12.pfb><C:/Program Files (x86)/MikTex/fonts/type1/public/am
-sfonts/cm/cmr6.pfb><C:/Program Files (x86)/MikTex/fonts/type1/public/amsfonts/c
-m/cmr8.pfb><C:/Program Files (x86)/MikTex/fonts/type1/public/amsfonts/cm/cmsy10
-.pfb><C:/Program Files (x86)/MikTex/fonts/type1/public/amsfonts/cm/cmsy6.pfb>
-Output written on Getriebebeleg.pdf (3 pages, 130920 bytes).
+/jknappen/ec/dpi600\tcrm1200.pk> <C:\Users\Moritz\AppData\Local\MiKTeX\fonts/pk
+/ljfour/jknappen/ec/dpi600\ecbx1440.pk> <C:\Users\Moritz\AppData\Local\MiKTeX\f
+onts/pk/ljfour/jknappen/ec/dpi600\ecrm1200.pk> <C:\Users\Moritz\AppData\Local\M
+iKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecbx1200.pk> <C:\Users\Moritz\AppData\
+Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecbx1728.pk><C:/Program Files (
+x86)/MikTex/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Program Files (x86)/M
+ikTex/fonts/type1/public/amsfonts/cm/cmmi12.pfb><C:/Program Files (x86)/MikTex/
+fonts/type1/public/amsfonts/cm/cmmi8.pfb><C:/Program Files (x86)/MikTex/fonts/t
+ype1/public/amsfonts/cm/cmr12.pfb><C:/Program Files (x86)/MikTex/fonts/type1/pu
+blic/amsfonts/cm/cmr6.pfb><C:/Program Files (x86)/MikTex/fonts/type1/public/ams
+fonts/cm/cmr8.pfb><C:/Program Files (x86)/MikTex/fonts/type1/public/amsfonts/cm
+/cmsy10.pfb><C:/Program Files (x86)/MikTex/fonts/type1/public/amsfonts/cm/cmsy6
+.pfb><C:/Program Files (x86)/MikTex/fonts/type1/public/amsfonts/cm/cmsy8.pfb>
+Output written on Getriebebeleg.pdf (9 pages, 166809 bytes).
 PDF statistics:
- 204 PDF objects out of 1000 (max. 8388607)
+ 256 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  13 words of extra memory for PDF output out of 10000 (max. 10000000)
 

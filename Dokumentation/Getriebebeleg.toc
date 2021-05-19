@@ -8,8 +8,12 @@
 \contentsline {subsection}{\numberline {3.1}Entwurfsrechnung per Hand}{2}{}%
 \contentsline {subsubsection}{\numberline {3.1.1}Überschlägiger Wellendurchmesser}{2}{}%
 \contentsline {subsubsection}{\numberline {3.1.2}Modulabschätzung}{3}{}%
-\contentsline {subsubsection}{\numberline {3.1.3}Mindestteilkreisdurchmesser}{3}{}%
-\contentsline {subsection}{\numberline {3.2}Nachrechnung Antriebswelle per Hand}{3}{}%
-\contentsline {subsection}{\numberline {3.3}Nachrechnung aller Wellen, Welle-Nabe-Verbindung, Zahnradstufen und Lager mittles KissSoft}{3}{}%
-\contentsline {subsection}{\numberline {3.4}Vergleich Handrechnung und KissSoft}{3}{}%
-\contentsline {subsection}{\numberline {3.5}Wirkungsgradabschätzung}{3}{}%
+\contentsline {subsubsection}{\numberline {3.1.3}Mindestteilkreisdurchmesser}{4}{}%
+\contentsline {subsubsection}{\numberline {3.1.4}Mindestzähnezahlen}{5}{}%
+\contentsline {subsubsection}{\numberline {3.1.5}Aufteilung Übersetzungsverhältnis und Auswahl Zähnezahlen}{5}{}%
+\contentsline {subsubsection}{\numberline {3.1.6}Achsabstände}{7}{}%
+\contentsline {subsection}{\numberline {3.2}Profilverschiebung}{7}{}%
+\contentsline {subsection}{\numberline {3.3}Nachrechnung Antriebswelle per Hand}{9}{}%
+\contentsline {subsection}{\numberline {3.4}Nachrechnung aller Wellen, Welle-Nabe-Verbindung, Zahnradstufen und Lager mittels KissSoft}{9}{}%
+\contentsline {subsection}{\numberline {3.5}Vergleich Handrechnung und KissSoft}{9}{}%
+\contentsline {subsection}{\numberline {3.6}Wirkungsgradabschätzung}{9}{}%
