@@ -22,5 +22,13 @@
   <file>Zwischenwelle.W10</file>
   <file>Ausgangswelle.W10</file>
   <file>Eingangswelle.W10</file>
+  <file>Lager_Eingangswelle.W50</file>
+  <file>Lager_Zwischenwelle.W50</file>
+  <file>Lager_Ausgangswelle.W50</file>
+  <file>Passfeder_ZR_1_1.M2A</file>
+  <file>Passfeder_ZR_1_2.M2A</file>
+  <file>Passfeder_ZR_2_2.M2A</file>
+  <file>Passfeder_ZR_2_1.M2A</file>
+  <file>Passfeder_Ausgang.M2A</file>
  </files>
 </KISSsoft>
