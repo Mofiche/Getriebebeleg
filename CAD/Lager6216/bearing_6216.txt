@@ -1,0 +1,18 @@
+﻿"Symbol";"Value";"Unit";
+"REFERENCE";"6216";"";
+"LIMIT_SPEED";"4500";"rpm";
+"TraceParts.PartVersion";"1.1.0";"";
+"SUPPLIER";"NACHI Europe GmbH";"";
+"WIDTH";"26";"mm";
+"MASS";"1.4";"kg";
+"TraceParts.PartNumber";"33-22032021-056875";"";
+"TraceParts.PartLanguage";"en";"";
+"DESIGN";"Deep-Groove Ball Bearing Open Type 6216";"";
+"TraceParts.InstanceId";"33-22032021-056875A5YK857DGT8WEJV2JD827G08V";"";
+"TraceParts.PartTitle";"Deep-Groove Ball Bearings Open Type";"";
+"INNER_DIAMETER";"80";"mm";
+"TRACEPARTS";"TRACEPARTS";"";
+"TraceParts.PartStatusId";"";"";
+"OUTER_DIAMETER";"140";"mm";
+"TraceParts.ClassPath";"NACHI:33-22032021-056875";"";
+"TraceParts.PartStatus";"Published";"";
