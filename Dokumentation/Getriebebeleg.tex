@@ -6,6 +6,7 @@
 \usepackage{amssymb}
 \usepackage{amsthm}
 \usepackage{tikz}
+\usepackage{pdfpages}	
 \usepackage{stanli}
 \usetikzlibrary{shapes}
 \usetikzlibrary{plotmarks}
@@ -13,14 +14,31 @@
 \setlength{\parindent}{0px}
 \newcommand{\du}[1]{\underline{\underline{#1}}}
 \newcommand{\under}[1]{\underline{#1}}
+\setcounter{secnumdepth}{5}
+\setcounter{tocdepth}{3}
+
+
 \begin{document}
 \tableofcontents
 \newpage
-
 \section{Zeichnungsdokumentation}
+Für genauere Ansicht der technischen Zeichnung bitte die einzelnen Zeichnungsdateien öffnen.
 \subsection{Zusammenbauzeichnungen}
+Schnitt: \\
+\includegraphics[width=\textwidth]{Getriebe_Schnitt.pdf}
+\newpage
+Draufsicht: \\ 
+\includegraphics[width=\textwidth]{Getriebe_Draufsicht.pdf}
+Vorderansicht: \\
+\includegraphics[width=\textwidth]{Getriebe_Vorderansicht.pdf}
 \subsection{Fertigungszeichnung Zwischenwelle}
+\includegraphics[width=\textwidth]{Zwischenwelle_Zeichnung.pdf}
 \subsection{Stückliste}
+\includegraphics[width=\textwidth,page=1]{Stueckliste.pdf}
+\newpage
+\includegraphics[width=\textwidth,page=2]{Stueckliste.pdf}
+\newpage
+\includegraphics[width=\textwidth,page=3]{Stueckliste.pdf}
 \section{Montageanleitung}
 \section{Berechnung}
 \subsection{Entwurfsrechnung per Hand}
@@ -56,7 +74,9 @@ d_{\ddot{u}b} &= \sqrt[3]{\frac{16 \cdot 1,1 \cdot 1221,11864 Nm}{\pi \cdot 30 M
 \begin{align*}
 d_{\ddot{u}b} &= 61,094 mm \rightarrow \ gew\ddot{a}hlt \ d_{Welle2} = \underline{62 mm}
 \end{align*}
-\subsubsection{Modulabschätzung}
+\subsubsection{Zahnräder}
+\paragraph{Modulabschätzung} 
+\leavevmode \\ \\
 \underline{Stufe 1} \\
 Annahmen für die Modulabschätzung:
 \begin{itemize}
@@ -83,7 +103,8 @@ m_n &= \sqrt[3]{\frac{5 \cdot K_A \cdot M_t \cdot cos^2 \beta}{{z_3}^2 \cdot \fr
 m_n &= \sqrt[3]{\frac{5 \cdot 1,1 \cdot 1221,11864 Nm \cdot cos^2 (10 ^\circ)}{{31}^2 \cdot 0,6} \cdot \frac{1,5}{430MPa} } \\ \\
 m_n &= 3,40296mm \rightarrow \ gew\ddot{a}hlt \ m_n = \underline{3 mm}
 \end{align*}
-\subsubsection{Mindestteilkreisdurchmesser}
+\paragraph{Mindestteilkreisdurchmesser}
+\leavevmode \\ \\
 \underline{Stufe 1} \\
 $t_2 = 3,3mm$ aus II 6/3
 \begin{align*}
@@ -98,7 +119,8 @@ d_{2min} &\geq d_{Welle2} + 2(t_2 + 2,5 \cdot m_n + 1,25 \cdot m_n) \\
 d_{2min} &\geq 62mm + 2(4,6mm + 2,5 \cdot 3mm + 1,25 \cdot 3mm) \\ \\
 d_{2min} &= \underline{93,7mm}
 \end{align*}
-\subsubsection{Mindestzähnezahlen}
+\paragraph{Mindestzähnezahlen}
+\leavevmode \\ \\
 \underline{Stufe 1}
 \begin{align*}
 m_{t1} &= \frac{m_n}{cos \beta} \\
@@ -117,7 +139,8 @@ z_{3min} &= \frac{d_{2min}}{m_t} \\
 z_{3min} &= \frac{93,7mm}{3,04628mm} \\ \\
 z_{3min} &= 30,7 \rightarrow \ gew\ddot{a}hlt \ z_3 = \underline{31}
 \end{align*}
-\subsubsection{Aufteilung Übersetzungsverhältnis und Auswahl Zähnezahlen}
+\paragraph{Aufteilung Übersetzungsverhältnis und Auswahl Zähnezahlen}
+\leavevmode \\ \\
 Aus $i_{ges;soll} = i_1 \cdot i_2 $ und $i_2 \approx 0,85 \cdot i_1$ folgt: 
 \begin{align*}
 i_1 \approx \frac{\sqrt{i_{ges}}}{0,85} &= 3,328 \\
@@ -150,7 +173,9 @@ i_{ges;ist} &= 8,13142 \\ \\
 \Delta i &= 0,01643 = \underline{1,643\%} \\ \\
 -3\% &< \Delta i < 3\% \rightarrow i.O.
 \end{align*}
-\subsubsection{Achsabstände}
+\newpage
+\paragraph{Achsabstände}
+\leavevmode \\ \\
 \underline{Stufe 1}
 \begin{align*}
 a_{d1} &= m_{t1} \cdot \frac{z_1 + z_2}{2} \\
@@ -163,7 +188,8 @@ a_{d2} &= m_{t2} \cdot \frac{z_3 + z_4}{2} \\
 a_{d2} &= 3,04628mm \cdot \frac{31+83}{2} \\
 a_{d2} &= 173,63795 mm \rightarrow gew\ddot{a}hlt \ a_{2} = \underline{175mm} \\ \\
 \end{align*}
-\subsubsection{Profilverschiebung}
+\paragraph{Profilverschiebung der Zahnräder}
+\leavevmode \\ \\
 \begin{align*}
 \alpha_t &= arctan\left(\frac{tan(\alpha_n)}{cos(\beta)}\right) \\
 \alpha_t &= arctan\left(\frac{tan(20^\circ)}{cos(10^\circ)}\right) \\
@@ -199,9 +225,626 @@ $x_1$ wurde durch Berechnung mit KissSoft so gewählt, dass es zu einem optimale
 (x_{2})_2 &= {(x_1 + x_2)}_2 - (x_{1})_2 \\
 (x_{2})_2 &= \underline{-0,1538839373}
 \end{align*}
+\subsubsection{Welle-Nabe-Verbindungen}
+\paragraph{Passfeder Kupplung Eingangswelle} \leavevmode \\ \\
+Daten an der Passfederstelle:
+\begin{itemize}
+\item $d = 46,5mm \rightarrow b=14mm \ ;  \ h = 9mm$
+\item $i = 1 \rightarrow \varphi = 1$
+\item $M_t = 402,07565 Nm$
+\item $K_A = 1,1$
+\item $p_w = 0,9 \cdot R_e = 0,9 \cdot 580 MPa =  522 MPa$
+\item $t_1 = 5,5 mm$
+\end{itemize}
+\begin{align*}
+erf. \ l_{tr} &= \frac{2\cdot M_t \cdot K_A}{d \cdot t_1 \cdot p_w \cdot (i \cdot \varphi)} \\ \\
+erf. \ l_{tr} &= \frac{2 \cdot 402.075,65 Nmm \cdot 1,1 }{46,5 mm \cdot 5,5mm \cdot 522 MPa \cdot (1 \cdot 1)} \\ \\
+erf. \ l_{tr} &= 6,63 mm \rightarrow gew\ddot{a}hlt \ l_{tr} =  \underline{22mm}
+\end{align*}
+Es wurde $l_{tr} = 22mm$ gewählt, da mit dieser tragenden Länge die laut DIN 6885 erforderliche Mindestlänge einer Passfeder mit einem Rohrdurchmesser von $46,5mm$ bei einer Breite von $b = 14 mm$ erreicht wird. Die Berechnung der erforderlichen tragenden Länge wurde für die Welle berechnet, da die Nabe einen höherwertigen Werkstoff besitzt. \\ (Welle : C60 ; Nabe : 16MnCr5)
+\begin{align*}
+erf. \ l &= erf. \ l_{tr} + b \\ \\
+erf. \ l &= 22 mm + 14 mm \\ \\
+erf. \ l &= \underline{36mm} \rightarrow \ genormte Länge
+\end{align*}
+Vorgabe:
+\begin{align*}
+l_{tr} &< 1,3 \cdot d \\ \\
+22 mm &< 1,3 \cdot 46,5 mm \\ \\
+22 mm &< 60,45mm \rightarrow i.O.
+\end{align*}
+\paragraph{Passfeder Ritzel Stufe 1}
+ \leavevmode \\ \\
+Daten an der Passfederstelle:
+\begin{itemize}
+\item $d = 38mm \rightarrow b=10mm \ ;  \ h = 8mm$
+\item $i = 1 \rightarrow \varphi = 1$
+\item $M_t = 402,07565 Nm$
+\item $K_A = 1,1$
+\item $p_w = 0,9 \cdot R_e = 0,9 \cdot 580 MPa =  522 MPa$
+\item $t_1 = 5 mm$
+\end{itemize}
+\begin{align*}
+erf. \ l_{tr} &= \frac{2\cdot M_t \cdot K_A}{d \cdot t_1 \cdot p_w \cdot (i \cdot \varphi)} \\ \\
+erf. \ l_{tr} &= \frac{2 \cdot 402.075,65 Nmm \cdot 1,1 }{38 mm \cdot 5mm \cdot 522 MPa \cdot (1 \cdot 1)} \\ \\
+erf. \ l_{tr} &= 8,92 mm \rightarrow gew\ddot{a}hlt \ l_{tr} =  \underline{26mm}
+\end{align*}
+Es wurde $l_{tr} = 26mm$ gewählt, da mit dieser tragenden Länge die genauen durch KissSoft berechneten Sicherheiten gut erfüllt werden.Die Berechnung der erforderlichen tragenden Länge wurde für die Welle berechnet, da die Nabe einen höherwertigen Werkstoff besitzt. \\ (Welle : C60 ; Nabe : 16MnCr5)
+\begin{align*}
+erf. \ l &= erf. \ l_{tr} + b \\ \\
+erf. \ l &= 26 mm + 10 mm \\ \\
+erf. \ l &= \underline{36mm} \rightarrow \ genormte Länge
+\end{align*}
+Vorgabe:
+\begin{align*}
+l_{tr} &< 1,3 \cdot d \\ \\
+26 mm &< 1,3 \cdot 38 mm \\ \\
+26 mm &< 49,4mm \rightarrow i.O.
+\end{align*}
+\paragraph{Passfeder Rad Stufe 1} \leavevmode \\ \\
+Daten an der Passfederstelle:
+\begin{itemize}
+\item $d = 60mm \rightarrow b=18mm \ ;  \ h = 11mm$
+\item $i = 1 \rightarrow \varphi = 1$
+\item $M_t = 1.221,11864 Nm$
+\item $K_A = 1,1$
+\item $p_w = 0,9 \cdot R_e = 0,9 \cdot 360 MPa =  324 MPa$
+\item $t_1 = 7 mm$
+\end{itemize}
+\begin{align*}
+erf. \ l_{tr} &= \frac{2\cdot M_t \cdot K_A}{d \cdot t_1 \cdot p_w \cdot (i \cdot \varphi)} \\ \\
+erf. \ l_{tr} &= \frac{2 \cdot 1.221.118,64 Nmm \cdot 1,1 }{46,5 mm \cdot 7mm \cdot 324 MPa \cdot (1 \cdot 1)} \\ \\
+erf. \ l_{tr} &= 19,74 mm \rightarrow gew\ddot{a}hlt \ l_{tr} =  \underline{45mm}
+\end{align*}
+Es wurde $l_{tr} = 45mm$ gewählt, da mit dieser tragenden Länge die genauen durch KissSoft berechneten Sicherheiten gut erfüllt werden.Die Berechnung der erforderlichen tragenden Länge wurde für die Welle berechnet, da die Nabe einen höherwertigen Werkstoff besitzt. \\ (Welle : E360 ; Nabe : 16MnCr5)
+\begin{align*}
+erf. \ l &= erf. \ l_{tr} + b \\ \\
+erf. \ l &= 45 mm + 18 mm \\ \\
+erf. \ l &= \underline{63mm} \rightarrow \ genormte Länge
+\end{align*}
+Vorgabe:
+\begin{align*}
+l_{tr} &< 1,3 \cdot d \\ \\
+45 mm &< 1,3 \cdot 60 mm \\ \\
+45 mm &< 78mm \rightarrow i.O.
+\end{align*}
+\paragraph{Passfeder Ritzel Stufe 2}\leavevmode \\ \\
+Daten an der Passfederstelle:
+\begin{itemize}
+\item $d = 58mm \rightarrow b=16mm \ ;  \ h = 10mm$
+\item $i = 1 \rightarrow \varphi = 1$
+\item $M_t = 1.221,11864 Nm$
+\item $K_A = 1,1$
+\item $p_w = 0,9 \cdot R_e = 0,9 \cdot 360 MPa = 324 MPa$
+\item $t_1 = 6 mm$
+\end{itemize}
+\begin{align*}
+erf. \ l_{tr} &= \frac{2\cdot M_t \cdot K_A}{d \cdot t_1 \cdot p_w \cdot (i \cdot \varphi)} \\ \\
+erf. \ l_{tr} &= \frac{2 \cdot 1.221.118,64 Nmm \cdot 1,1 }{58 mm \cdot 6mm \cdot 324 MPa \cdot (1 \cdot 1)} \\ \\
+erf. \ l_{tr} &= 28,5 mm \rightarrow gew\ddot{a}hlt \ l_{tr} =  \underline{47mm}
+\end{align*}
+Es wurde $l_{tr} = 47mm$ gewählt, da mit dieser tragenden Länge die genauen durch KissSoft berechneten Sicherheiten gut erfüllt werden.Die Berechnung der erforderlichen tragenden Länge wurde für die Welle berechnet, da die Nabe einen höherwertigen Werkstoff besitzt. \\ (Welle : E360 ; Nabe : 16MnCr5)
+\begin{align*}
+erf. \ l &= erf. \ l_{tr} + b \\ \\
+erf. \ l &= 47 mm + 16 mm \\ \\
+erf. \ l &= \underline{63mm} \rightarrow \ genormte Länge
+\end{align*}
+Vorgabe:
+\begin{align*}
+l_{tr} &< 1,3 \cdot d \\ \\
+47 mm &< 1,3 \cdot 58 mm \\ \\
+47 mm &< 75,4mm \rightarrow i.O.
+\end{align*}
+\paragraph{Passfeder Rad Stufe 2}
+\leavevmode \\ \\
+Daten an der Passfederstelle:
+\begin{itemize}
+\item $d = 85mm \rightarrow b=22mm \ ;  \ h = 14mm$
+\item $i = 1 \rightarrow \varphi = 1$
+\item $M_t = 3.269,44668 Nm$
+\item $K_A = 1,1$
+\item $p_w = 0,9 \cdot R_e = 0,9 \cdot 235 MPa =  211,5 MPa$
+\item $t_1 = 9 mm$
+\end{itemize}
+\begin{align*}
+erf. \ l_{tr} &= \frac{2\cdot M_t \cdot K_A}{d \cdot t_1 \cdot p_w \cdot (i \cdot \varphi)} \\ \\
+erf. \ l_{tr} &= \frac{2 \cdot 3.269.446,68 Nmm \cdot 1,1 }{85 mm \cdot 9mm \cdot 211,5 MPa \cdot (1 \cdot 1)} \\ \\
+erf. \ l_{tr} &= 44,46 mm \rightarrow gew\ddot{a}hlt \ l_{tr} =  \underline{58mm}
+\end{align*}
+Es wurde $l_{tr} = 58mm$ gewählt, da mit dieser tragenden Länge die genauen durch KissSoft berechneten Sicherheiten gut erfüllt werden. Die Berechnung der erforderlichen tragenden Länge wurde für die Welle berechnet, da die Nabe einen höherwertigen Werkstoff besitzt. \\ (Welle : S235JR ; Nabe : 16MnCr5)
+\begin{align*}
+erf. \ l &= erf. \ l_{tr} + b \\ \\
+erf. \ l &= 58 mm + 20 mm \\ \\
+erf. \ l &= \underline{80mm} \rightarrow \ genormte Länge
+\end{align*}
+Vorgabe:
+\begin{align*}
+l_{tr} &< 1,3 \cdot d \\ \\
+58 mm &< 1,3 \cdot 85 mm \\ \\
+58 mm &< 110,5mm \rightarrow i.O.
+\end{align*}
+\paragraph{Passfeder Kupplung Ausgangswelle}
+\leavevmode \\ \\
+Daten an der Passfederstelle:
+\begin{itemize}
+\item $d = 70mm \rightarrow b=20mm \ ;  \ h = 12mm$
+\item $i = 1 \rightarrow \varphi = 1$
+\item $M_t = 3.269,44668 Nm$
+\item $K_A = 1,1$
+\item $p_w = 0,9 \cdot R_e = 0,9 \cdot 235 MPa =  211,5 MPa$
+\item $t_1 = 7,5 mm$
+\end{itemize}
+\begin{align*}
+erf. \ l_{tr} &= \frac{2\cdot M_t \cdot K_A}{d \cdot t_1 \cdot p_w \cdot (i \cdot \varphi)} \\ \\
+erf. \ l_{tr} &= \frac{2 \cdot 3.269.446,68 Nmm \cdot 1,1 }{70 mm \cdot 7mm \cdot 211,5 MPa \cdot (1 \cdot 1)} \\ \\
+erf. \ l_{tr} &= 64,8 mm \rightarrow gew\ddot{a}hlt \ l_{tr} =  \underline{120mm}
+\end{align*}
+Es wurde $l_{tr} = 120mm$ gewählt, da mit dieser tragenden Länge die genauen durch KissSoft berechneten Sicherheiten gut erfüllt werden. Die Berechnung der erforderlichen tragenden Länge wurde für die Welle berechnet, da die Nabe einen höherwertigen Werkstoff besitzt. \\ (Welle : S235JR ; Nabe : 16MnCr5)
+\begin{align*}
+erf. \ l &= erf. \ l_{tr} + b \\ \\
+erf. \ l &= 120 mm + 20 mm \\ \\
+erf. \ l &= \underline{140mm} \rightarrow \ genormte Länge
+\end{align*}
+Vorgabe:
+\begin{align*}
+l_{tr} &< 1,3 \cdot d \\ \\
+58 mm &< 1,3 \cdot 85 mm \\ \\
+58 mm &< 110,5mm \rightarrow i.O.
+\end{align*}
+\subsubsection{Lager}
+\paragraph{Loslager Eingangswelle}
+\paragraph{Festlager Eingangswelle}
+\paragraph{Loslager Zwischenwelle}
+\paragraph{Festlager Zwischenwelle}
+\paragraph{Loslager Ausgangswelle}
+\paragraph{Festlager Augangswelle}
 \subsection{Nachrechnung Antriebswelle per Hand}
+\subsubsection{Festigkeitsnachweiß an gefährdeten Stellen}
+\paragraph{Freistich am Zahnrad Richtung Festlager} \leavevmode \\
+Belastungen an dieser Stellen:
+\begin{align*}
+M_{bx}&=291.891,2875Nmm\approx291.891Nmm \\
+M_{by}&=146.657,865Nmm\approx146.658Nmm \\
+F_L&=2.044,38N \\
+M_t&=402.075,6457Nmm\approx402.076Nmm \\
+M_{bres}&=\sqrt{\left(M_{bx}\right)^2+\left(M_{by}\right)^2}
+\\&=\sqrt{\left(291.891Nmm\right)^2+\left(146.658Nmm\right)^2}
+\\&=326.663,3203Nmm\approx326.663Nmm \\
+\end{align*}
+Zulässige Maximalspannungen
+\begin{align*}
+R_e&=580\frac{N}{{mm}^2} \\
+R_m&=850\frac{N}{{mm}^2} \\
+\sigma_{zdW}&\approx0,4\cdot \ R_m=340\frac{N}{{mm}^2} \\
+\sigma_{bW}&\approx0,5\cdot\ R_m=425\frac{N}{{mm}^2} \\
+\tau_{tW}&\approx0,3\cdot\ R_m=255\frac{N}{{mm}^2} \\
+\sigma_{bF}&\approx1,1\cdot\ R_e=638\frac{N}{{mm}^2} \\
+\tau_{tF}&\approx\frac{1,1}{\sqrt3}\cdot\ R_e \approx368\frac{N}{{mm}^2} \\
+\end{align*} \\
+Berechnung:
+\begin{align*}
+d&=37,4mm \\
+A&=\frac{\pi\cdot\left(37,4mm\right)^2}{4}=1098,583535mm^2\approx1099mm2 \\
+W_b&=\frac{\pi\cdot\left(37,4mm\right)^3}{32}=5135,878026mm^3\approx5136mm^3 \\
+W_t&=\frac{\pi\cdot\left(37,4mm\right)^3}{16}=10271,75605mm^3\approx10272mm^3 \\
+\alpha_{\sigma,zd}&=1+\frac{1}{\sqrt{0,62\cdot\frac{0,8mm}{9,3mm}+7\cdot\frac{0,8mm}{37,4mm}\cdot\left(1+2\cdot\frac{0,8mm}{37,4mm}\right)^2}} \\ 
+&=3,150904031\approx3,151 \\ \\
+\alpha_{\sigma,b}&=1+\frac{1}{\sqrt{0,62\cdot\frac{0,8mm}{9,3mm}+11,6\cdot\frac{0,8mm}{37,4mm}\cdot\left(1+2\cdot\frac{0,8mm}{37,4mm}\right)^2+0,2\cdot\left(\frac{0,8mm}{9,3mm}\right)^3\cdot\frac{37,4mm}{56mm}}}\\ &=2,758909365\approx2,759 \\ \\
+\alpha_{\tau,t}&=1+\frac{1}{\sqrt{3,4\cdot\frac{0,8mm}{9,3mm}+38\cdot\frac{0,8mm}{37,4mm}\cdot\left(1+2\cdot\frac{0,8mm}{37,4mm}\right)^2+\left(\frac{0,8mm}{9,3mm}\right)^2\cdot\frac{37,4mm}{56mm}}}\\ &=1,920074077\approx1,92 \\ \\
+\varphi&=\frac{1}{4\cdot\sqrt{\frac{9,3mm}{0,8mm}}+2}=0,06394605328\approx0,064 \\ \\
+K_{1D\ aus\ Re}&=0,82 \\
+\end{align*}
+Zug/Druck und Biegung:
+\begin{align*}
+G'&=\frac{2,3\cdot\left(1+0,064\right)}{0,8mm}=3,059\frac{1}{mm} \\ \\
+n&=1+\sqrt{3,059\frac{1}{mm}}\cdot{10}^{-\left(0,33+\frac{0,82\cdot580\frac{N}{mm^2}}{712MPa}\right)}=1,175716365\approx1,176 \\ \\
+\beta_{\sigma;zd}&=\frac{3,151}{1,176}=2,679421769\approx2,679 \\ \\
+\beta_{\sigma;b}&=\frac{2,759}{1,176}=2,346088435\approx2,346 
+\end{align*}
+Torsion:
+\begin{align*}
+G'&=\frac{1,15}{0,8mm}=1,4375\frac{1}{mm} \\ \\
+n&=1+\sqrt{1,4375\frac{1}{mm}}\cdot{10}^{-\left(0,33+\frac{0,82\cdot580\frac{N}{mm^2}}{712MPa}\right)}=1,120455435\approx1,12 \\ \\
+\beta_\tau&=\frac{1,92}{1,12}=1,714285714\approx1,714
+\end{align*}
+Berechnungswerte:
+\begin{align*}
+K_{1\ aus\ Rm}&=0,9 \ (II \ 1/18)\\
+K_{1\ aus\ Re}&=0,82 \ (II \ 1/18) \\
+K_{2;b,\tau}&=0,89  \ (II \ 1/18) \\
+K_{2;zd}&=1  \ (II \ 1/18) \\
+K_{F\sigma}&= 1-0,22\cdot\lg{\left(\frac{R_z}{\mu m}\right)}\cdot\left(\lg{\left(\frac{\sigma_B (d)}{20\frac{N}{mm^2}}\right)}-1\right) 
+\\ &=1-0,22\cdot\lg{\left(\frac{8\mu m}{\mu m}\right)}\cdot\left(\lg{\left(\frac{0,82 \cdot 850\frac{N}{mm^2}}{20\frac{N}{mm^2}}\right)}-1\right)
+\\&=0,892275612\approx0,892 \\ \\
+K_{F\tau}&=0,575\cdot0,892275612+0,425=0,9380582752\approx0,938 \\ \\
+K_V&=1 \\ \\
+K_{\sigma;zd}&= \left(\frac{\beta_\sigma}{K_{2;zd}}+\frac{1}{K_{F\sigma}}-1\right)\cdot\frac{1}{K_V}
+\\ &= \left(\frac{2,679}{1}+\frac{1}{0,875}-1\right)\cdot\frac{1}{1}
+\\&=2,800151424\approx2,8 \\ \\
+K_{\sigma;b}&= \left(\frac{\beta_\sigma}{K_{2;b}}+\frac{1}{K_{F\sigma}}-1\right)\cdot\frac{1}{K_V}
+\\ &= \left(\frac{2,346}{0,89}+\frac{1}{0,875}-1\right)\cdot\frac{1}{1}
+\\&=2,756784369\approx2,757 \\ \\
+K_{\tau}&= \left(\frac{\beta_\tau}{K_{2;t}}+\frac{1}{K_{F\tau}}-1\right)\cdot\frac{1}{K_V}
+\\ &= \left(\frac{1,714}{0,89}+\frac{1}{0,938}-1\right)\cdot\frac{1}{1}
+\\&=1,992229669\approx1,992
+\end{align*}
+\newpage
+\begin{align*}
+\sigma_{zdFK}&= K_{1\ R_e} \cdot R_e \cdot \gamma_F\\&=0,82\cdot580\frac{N}{mm^2}  \cdot 1\\&=475,6\frac{N}{mm^2}\\ \\
+\sigma_{bFK}&= K_{1\ R_e} \cdot \sigma_{bF} \cdot \gamma_F\\&=0,82\cdot638\frac{N}{mm^2}  \cdot 1\\&=523,16\frac{N}{mm^2}\\ \\
+\tau_{tFK}&= K_{1\ R_e} \cdot \tau_{tF} \cdot \gamma_F\\&=0,82\cdot368\frac{N}{mm^2}  \cdot 1\\&=301,76\frac{N}{mm^2}\\ \\
+\sigma_{zdWK}&= \frac{\sigma_{zdW}\cdot K_{1;R_m}}{K_\sigma}
+\\&=\frac{340\frac{N}{{mm}^2}\cdot0,9}{2,8}
+\\&=109,2857143\frac{N}{{mm}^2}\approx109,286\frac{N}{{mm}^2} \\ \\
+\sigma_{bWK}&= \frac{\sigma_{bW}\cdot K_{1;R_m}}{K_\sigma}
+\\&=\frac{425\frac{N}{{mm}^2}\cdot0,9}{2,757}
+\\ &= 138,7486103\frac{N}{{mm}^2}\approx138,749\frac{N}{{mm}^2}\\ \\
+\tau_{tWK}&= \frac{\tau_{tW}\cdot K_{1;R_m}}{K_\tau}
+\\&=\frac{255\frac{N}{{mm}^2}\cdot0,9}{1,992}
+\\&=115,1975616\frac{N}{{mm}^2}\approx115,198\frac{N}{{mm}^2} \\ \\
+\end{align*}
+\newpage
+\begin{align*}
+\sigma_{zdm}&=\frac{F_L}{A}
+\\&=\frac{2044,38N}{1099mm^2}\\&=1,86021838\frac{N}{mm^2}\approx1,86\frac{N}{mm^2} \\ \\
+\sigma_{zda}&= \sigma_{zdm} \cdot K_A - \sigma_{zdm}
+\\&=0,186\frac{N}{mm^2} \\ \\
+\sigma_{bm}&=0,\ da\ wechselnd \\ \\
+\sigma_{ba}&=\frac{M_{bres}}{W_b}
+\\&=\frac{326663\frac{N}{mm^2}}{5136mm^3}=63,60260903\frac{N}{mm^2}\approx63,6\frac{N}{mm^2} \\ \\
+\tau_{tm}&=\frac{M_{tres}}{W_t}
+\\&=\frac{402076Nmm}{10272mm^3}=39,14291277\frac{N}{mm^2}\approx39,14\frac{N}{mm^2} \\ \\
+\tau_{ta}&=\tau_{tm} \cdot K_A - \tau_{tm}
+\\&=3,914\frac{N}{mm^2}
+\end{align*}
+\begin{align*}
+\psi_{zd\sigma K}&= \frac{\sigma_{zdWK}}{2 \cdot K_1 \cdot R_m-\sigma_{zdWK}}
+\\&=\frac{109,286\frac{N}{mm^2}}{2\cdot0,9\cdot850\frac{N}{mm^2}-109,286\frac{N}{mm^2}}
+\\&=0,07724450519\approx0,077 \\ \\
+\psi_{b\sigma K}&= \frac{\sigma_{bWK}}{2 \cdot K_1 \cdot R_m-\sigma_{bWK}}
+\\&=\frac{138,749\frac{N}{mm^2}}{2\cdot0,9\cdot850\frac{N}{mm^2}-138,749\frac{N}{mm^2}}
+\\&=0,09972935969\approx0,1 \\ \\
+\psi_{t\tau K}&= \frac{\tau_{tWK}}{2 \cdot K_1 \cdot R_m-\tau_{tWK}}
+\\&=\frac{115,198\frac{N}{mm^2}}{2\cdot0,9\cdot850\frac{N}{mm^2}-115,198\frac{N}{mm^2}}
+\\&=0,08142307255\approx0,081 \\ \\
+\sigma_{mv}&= \sqrt{\left(\sigma_{zdm} + \sigma_{bm}\right)^2+3\cdot\left(\tau_{tm}\right)^2}\\&=\sqrt{\left(1,86\frac{N}{mm^2}+ 0\frac{N}{mm^2}\right)^2+3\cdot\left(39,14\frac{N}{mm^2}\right)^2}\\ &=67,81797992\frac{N}{mm^2}\approx67,82\frac{N}{mm^2} \\ \\
+\tau_{tmv}&=\frac{\sigma_{mv}}{\sqrt3}
+\\&=\frac{67,82\frac{N}{mm^2}}{\sqrt3}
+\\&=39,15472896\frac{N}{mm^2}\approx39,15\frac{N}{mm^2}
+\end{align*}
+\begin{align*}
+R_{zd\sigma Kv}&= \frac{\sigma_{mv}-\sigma_{zda}}{\sigma_{mv}+\sigma_{zda}}
+\\&=\frac{67,82\frac{N}{mm^2}-0,186\frac{N}{mm^2}}{67,82\frac{N}{mm^2}+0,186\frac{N}{mm^2}}
+\\&=0,9945298944\approx0,995 \\ \\
+R_{zdG}&= \frac{1+\psi_{zd\sigma K}-2\cdot\frac{\sigma_{zdWK}}{\sigma_{zdFK}}}{1-\psi_{zd\sigma K}}
+ \\&=\frac{1+0,077-2\cdot\frac{109,286\frac{N}{mm^2}}{475,6\frac{N}{mm^2}}}{1-0,077}
+\\&=0,6693806127\approx0,669 \\ \\
+R_{zd\sigma Kv}&>R_{zdG} \ : \\
+\sigma_{zdADK}&= \frac{\sigma_{zdFK}}{1+\sigma_{mv}/\sigma_{zda}}
+\\&=\frac{475,6\frac{N}{mm^2}}{1+\frac{67,82\frac{N}{mm^2}}{0,186\frac{N}{mm^2}}}
+\\&=1,300829747\frac{N}{mm^2}\approx \underline{1,301}\frac{N}{mm^2}
+\end{align*}
+\begin{align*}
+R_{b\sigma Kv}&= \frac{\sigma_{mv}-\sigma_{ba}}{\sigma_{mv}+\sigma_{ba}}
+\\&=\frac{67,82\frac{N}{mm^2}-63,6\frac{N}{mm^2}}{67,82\frac{N}{mm^2}+63,6\frac{N}{mm^2}}\\&=0,03211078983\approx0,032 \\ \\
+R_{bG}&= \frac{1+\psi_{b\sigma K}-2\cdot\frac{\sigma_{bWK}}{\sigma_{bFK}}}{1-\psi_{b\sigma K}} 
+\\&=\frac{1+0,1-2\cdot\frac{138,749\frac{N}{mm^2}}{523,16\frac{N}{mm^2}}}{1-0,1}
+\\&=0,6323700741\approx0,632 \\
+R_{b\sigma Kv}&<R_{bG} :\\
+\sigma_{bADK}&= \frac{\sigma_{bWK}}{1+\psi_{b\sigma K}\cdot\sigma_{mv}/\sigma_{ba}}
+\\&=\frac{138,749\frac{N}{{mm}^2}}{1+0,1\cdot\frac{67,82\frac{N}{{mm}^2}}{63,6\frac{N}{mm^2}}}\\&=125,4122302\frac{N}{mm^2}\approx\underline{125,412}\frac{N}{mm^2}
+\end{align*}
+\newpage
+\begin{align*}
+R_{t\tau Kv}&= \frac{\tau_{tmv}-\tau_{ta}}{\tau_{tmv}+\tau_{ta}}
+\\&=\frac{39,15\frac{N}{mm^2}-3,914\frac{N}{mm^2}}{39,15\frac{N}{mm^2}+3,914\frac{N}{mm^2}}
+\\&=0,8182240386\approx0,818 \\ \\
+R_{tG}&= \frac{1+\psi_{t\tau K}-2\cdot\frac{\tau_{tWK}}{\tau_{tFK}}}{1-\psi_{t\tau K}}
+\\&=\frac{1+0,081-2\cdot\frac{115,198\frac{N}{mm^2}}{301,76\frac{N}{mm^2}}}{1-0,081}
+\\&=0,346098999\approx0,346 \\ \\
+R_{t\tau Kv}&>R_{tG} \\
+\tau_{tADK}&= \frac{\tau_{tFK}}{1+ \tau_{tmv} / \tau_{ta}}
+\\&=\frac{301,76\frac{N}{mm^2}}{1+39,15\frac{N}{mm^2}/3,914\frac{N}{mm^2}}
+\\&=27,42635705\frac{N}{mm^2}\approx\underline{27,426}\frac{N}{mm^2}
+\end{align*}
+Sicherheiten Dauerfestigkeit:
+\begin{align*}
+S_{D;zd}&=\frac{\sigma_{zdADK}}{\sigma_{zda}} \\
+&= \frac{1,301 \frac{N}{mm^2} }{0,186 \frac{N}{mm^2}} \\
+&= \underline{6,993709317} \approx 6,994 \\ \\
+S_{D;b}&=\frac{\sigma_{bADK}}{\sigma_{bda}} \\
+&= \frac{125,412 \frac{N}{mm^2} }{63,6 \frac{N}{mm^2}} \\
+&= \underline{1,971890412} \approx 1,972 \\ \\
+S_{D;t}&=\frac{\tau_{tADK}}{\tau_{tda}} \\
+&= \frac{27,426 \frac{N}{mm^2} }{3,914 \frac{N}{mm^2}} \\
+&= \underline{7,007245031} \approx 7,007 \\ \\
+S_D &= \frac{1}{\sqrt{\left(\frac{1}{S_{D;zd}}+\frac{1}{S_{D;b}}\right)^2+\left(\frac{1}{S_{D;t}}\right)^2}}
+\\&=\frac{1}{\sqrt{\left(\frac{1}{6,994}+\frac{1}{1,972}\right)^2+\left(\frac{1}{7,007}\right)^2}}
+\\&=1,502421074\approx \du{1,502}
+\end{align*}
+Sicherheiten Fließen:
+\begin{align*}
+S_{F;zd}&= \frac{\sigma_{zdFK}}{\sigma_{zdmax}} = \frac{\sigma_{zdFK}}{\sigma_{zdm} \cdot K_A}
+\\&=\frac{475,6\frac{N}{mm^2}}{1,86\frac{N}{mm^2}\cdot1,1}
+\\&=232,4535679\approx232,454 \\ \\
+S_{F;b}&= \frac{\sigma_{bFK}}{\sigma_{bmax}} = \frac{\sigma_{bFK}}{\sigma_{ba}}
+\\&=\frac{523,16\frac{N}{mm^2}}{63,6\frac{N}{mm^2}}
+\\&=7,477987421\approx7,478 \\ \\
+S_{F;t}&= \frac{\tau_{tFK}}{\tau_{tmax}} = \frac{\tau_{tFK}}{\tau_{tm} \cdot K_A}
+\\&=\frac{301,76\frac{N}{mm^2}}{39,14\frac{N}{mm^2} \cdot 1,1}
+\\&=7,008872579\approx7,009 \\ \\
+S_F &= \frac{1}{\sqrt{\left(\frac{1}{S_{F;zd}}+\frac{1}{S_{F;b}}\right)^2+\left(\frac{1}{S_{F;t}}\right)^2}}
+\\&=\frac{1}{\sqrt{\left(\frac{1}{232,454}+\frac{1}{7,478}\right)^2+\left(\frac{1}{7,009}\right)^2}}
+\\&=5,037403861\approx \du{5,037}
+\end{align*}
+\paragraph{Passfeder}
+\leavevmode \\
+Belastungen an dieser Stellen:
+\begin{align*}
+M_{bx}&=324.026,1475Nmm\approx324.026Nmm \\
+M_{by}&=162.803,685Nmm\approx162.804Nmm \\
+F_L&=2.044,38N \\
+M_t&=402.075,6457Nmm\approx402.076Nmm \\
+M_{bres}&=\sqrt{\left(M_{bx}\right)^2+\left(M_{by}\right)^2}
+\\&=\sqrt{\left(324.026Nmm\right)^2+\left(162.804Nmm\right)^2}
+\\&=362.626,517Nmm\approx362.627Nmm \\
+\end{align*}
+Zulässige Maximalspannungen
+\begin{align*}
+R_e&=580\frac{N}{{mm}^2} \\
+R_m&=850\frac{N}{{mm}^2} \\
+\sigma_{zdW}&\approx0,4\cdot \ R_m=340\frac{N}{{mm}^2} \\
+\sigma_{bW}&\approx0,5\cdot\ R_m=425\frac{N}{{mm}^2} \\
+\tau_{tW}&\approx0,3\cdot\ R_m=255\frac{N}{{mm}^2} \\
+\sigma_{bF}&\approx1,1\cdot\ R_e=638\frac{N}{{mm}^2} \\
+\tau_{tF}&\approx\frac{1,1}{\sqrt3}\cdot\ R_e \approx368\frac{N}{{mm}^2} \\
+\end{align*} \\
+Berechnung:
+\begin{align*}
+d&=38mm \\
+A&=\frac{\pi\cdot\left(38mm\right)^2}{4}=1.134,114948mm^2\approx1.134mm2 \\
+W_b&=\frac{\pi\cdot\left(38mm\right)^3}{32}=5.387,046003mm^3\approx5.387mm^3 \\
+W_t&=\frac{\pi\cdot\left(38mm\right)^3}{16}=10.774,09201mm^3\approx10.774mm^3 \\
+\beta_\sigma &= 2,85 \ (II \ 1/17) \\
+\beta_\tau &= 1,75 \ ( II \ 1/17) \\
+K_{1\ aus\ Rm}&=0,9 \ (II \ 1/18)\\
+K_{1\ aus\ Re}&=0,87 \ (II \ 1/18) \\
+K_{2;b,\tau}&=0,89  \ (II \ 1/18) \\
+K_{2;zd}&=1  \ (II \ 1/18) \\
+K_{F\sigma}&= 1-0,22\cdot\lg{\left(\frac{R_z}{\mu m}\right)}\cdot\left(\lg{\left(\frac{\sigma_B (d)}{20\frac{N}{mm^2}}\right)}-1\right) 
+\\ &=1-0,22\cdot\lg{\left(\frac{8\mu m}{\mu m}\right)}\cdot\left(\lg{\left(\frac{0,9 \cdot 850\frac{N}{mm^2}}{20\frac{N}{mm^2}}\right)}-1\right)
+\\&=0,884249038\approx0,884 \\ \\
+K_{F\tau}&=0,575\cdot0,884249038+0,425=0,9334396697\approx0,933 \\ \\
+K_V&=1 \\ \\
+\end{align*}
+\begin{align*}
+K_{\sigma;zd}&= \left(\frac{\beta_\sigma}{K_{2;zd}}+\frac{1}{K_{F\sigma}}-1\right)\cdot\frac{1}{K_V}
+\\ &= \left(\frac{2,85}{1}+\frac{1}{0,884}-1\right)\cdot\frac{1}{1}
+\\&=2,980850253\approx2,981 \\ \\
+K_{\sigma;b}&= \left(\frac{\beta_\sigma}{K_{2;b}}+\frac{1}{K_{F\sigma}}-1\right)\cdot\frac{1}{K_V}
+\\ &= \left(\frac{2,85}{0,89}+\frac{1}{0,884}-1\right)\cdot\frac{1}{1}
+\\&=3,333097444\approx3,333 \\ \\
+K_{\tau}&= \left(\frac{\beta_\tau}{K_{2;t}}+\frac{1}{K_{F\tau}}-1\right)\cdot\frac{1}{K_V}
+\\ &= \left(\frac{1,75}{0,89}+\frac{1}{0,933}-1\right)\cdot\frac{1}{1}
+\\&=2,03759865\approx2,038 \\ \\
+\sigma_{zdFK}&= K_{1\ R_e} \cdot R_e \cdot \gamma_F\\&=0,87\cdot580\frac{N}{mm^2}  \cdot 1\\&=504,6\frac{N}{mm^2}\\ \\
+\sigma_{bFK}&= K_{1\ R_e} \cdot \sigma_{bF} \cdot \gamma_F\\&=0,87\cdot638\frac{N}{mm^2}  \cdot 1\\&=555,6\frac{N}{mm^2}\\ \\
+\tau_{tFK}&= K_{1\ R_e} \cdot \tau_{tF} \cdot \gamma_F\\&=0,87\cdot368\frac{N}{mm^2}  \cdot 1\\&=320,16\frac{N}{mm^2}\\ \\
+\end{align*}
+\newpage
+\begin{align*}
+\sigma_{zdWK}&= \frac{\sigma_{zdW}\cdot K_{1;R_m}}{K_\sigma}
+\\&=\frac{340\frac{N}{{mm}^2}\cdot0,9}{2,981}
+\\&=102,6552742\frac{N}{{mm}^2}\approx102,655\frac{N}{{mm}^2} \\ \\
+\sigma_{bWK}&= \frac{\sigma_{bW}\cdot K_{1;R_m}}{K_\sigma}
+\\&=\frac{425\frac{N}{{mm}^2}\cdot0,9}{3,333}
+\\ &= 114,7581211\frac{N}{{mm}^2}\approx114,758\frac{N}{{mm}^2}\\ \\
+\tau_{tWK}&= \frac{\tau_{tW}\cdot K_{1;R_m}}{K_\tau}
+\\&=\frac{255\frac{N}{{mm}^2}\cdot0,9}{2,038}
+\\&=112,6325835\frac{N}{{mm}^2}\approx112,633\frac{N}{{mm}^2} \\ \\
+\sigma_{zdm}&=\frac{F_L}{A}
+\\&=\frac{2044,38N}{1134mm^2}\\&=1,802804233\frac{N}{mm^2}\approx1,8\frac{N}{mm^2} \\ \\
+\sigma_{zda}&= \sigma_{zdm} \cdot K_A - \sigma_{zdm}
+\\&=0,18\frac{N}{mm^2} \\ \\
+\sigma_{bm}&=0,\ da\ wechselnd \\ \\
+\sigma_{ba}&=\frac{M_{bres}}{W_b}
+\\&=\frac{362.627\frac{N}{mm^2}}{5387mm^3}=67,31520327\frac{N}{mm^2}\approx67,3\frac{N}{mm^2} \\ \\
+\end{align*}
+\newpage
+\begin{align*}
+\tau_{tm}&=\frac{M_{tres}}{W_t}
+\\&=\frac{402076Nmm}{10774mm^3}=37,31910154\frac{N}{mm^2}\approx37,3\frac{N}{mm^2} \\ \\
+\tau_{ta}&=\tau_{tm} \cdot K_A - \tau_{tm}
+\\&=3,73\frac{N}{mm^2} \\ \\
+\psi_{zd\sigma K}&= \frac{\sigma_{zdWK}}{2 \cdot K_1 \cdot R_m-\sigma_{zdWK}}
+\\&=\frac{102,655\frac{N}{mm^2}}{2\cdot0,9\cdot850\frac{N}{mm^2}-102,655\frac{N}{mm^2}}
+\\&=0,07192044945\approx0,072 \\ \\
+\psi_{b\sigma K}&= \frac{\sigma_{bWK}}{2 \cdot K_1 \cdot R_m-\sigma_{bWK}}
+\\&=\frac{114,758\frac{N}{mm^2}}{2\cdot0,9\cdot850\frac{N}{mm^2}-114,758\frac{N}{mm^2}}
+\\&=0,08108728464\approx0,081 \\ \\
+\psi_{t\tau K}&= \frac{\tau_{tWK}}{2 \cdot K_1 \cdot R_m-\tau_{tWK}}
+\\&=\frac{112,633\frac{N}{mm^2}}{2\cdot0,9\cdot850\frac{N}{mm^2}-112,633\frac{N}{mm^2}}
+\\&=0,07936604539\approx0,079 \\ \\
+\sigma_{mv}&= \sqrt{\left(\sigma_{zdm} + \sigma_{bm}\right)^2+3\cdot\left(\tau_{tm}\right)^2}\\&=\sqrt{\left(1,8\frac{N}{mm^2}+ 0\frac{N}{mm^2}\right)^2+3\cdot\left(37,3\frac{N}{mm^2}\right)^2}\\ &=64,63056552\frac{N}{mm^2}\approx64,631\frac{N}{mm^2} \\ \\
+\end{align*}
+\begin{align*}
+\tau_{tmv}&=\frac{\sigma_{mv}}{\sqrt3}
+\\&=\frac{64,631\frac{N}{mm^2}}{\sqrt3}
+\\&=37,3144744\frac{N}{mm^2}\approx37,314\frac{N}{mm^2} \\ \\
+R_{zd\sigma Kv}&= \frac{\sigma_{mv}-\sigma_{zda}}{\sigma_{mv}+\sigma_{zda}}
+\\&=\frac{64,631\frac{N}{mm^2}-0,18\frac{N}{mm^2}}{64,621\frac{N}{mm^2}+0,18\frac{N}{mm^2}}
+\\&=0,9944453017\approx0,994 \\ \\
+R_{zdG}&= \frac{1+\psi_{zd\sigma K}-2\cdot\frac{\sigma_{zdWK}}{\sigma_{zdFK}}}{1-\psi_{zd\sigma K}}
+ \\&=\frac{1+0,072-2\cdot\frac{102,655\frac{N}{mm^2}}{555,6\frac{N}{mm^2}}}{1-0,072}
+\\&=0,7146777975\approx0,715 \\ \\
+R_{zd\sigma Kv}&>R_{zdG} \ : \\
+\sigma_{zdADK}&= \frac{\sigma_{zdFK}}{1+\sigma_{mv}/\sigma_{zda}}
+\\&=\frac{504,6\frac{N}{mm^2}}{1+\frac{64,631\frac{N}{mm^2}}{0,18\frac{N}{mm^2}}}
+\\&=1,401450393\frac{N}{mm^2}\approx \underline{1,401}\frac{N}{mm^2}
+\end{align*}
+\begin{align*}
+R_{b\sigma Kv}&= \frac{\sigma_{mv}-\sigma_{ba}}{\sigma_{mv}+\sigma_{ba}}
+\\&=\frac{64,631\frac{N}{mm^2}-67,3\frac{N}{mm^2}}{64,631\frac{N}{mm^2}+67,3\frac{N}{mm^2}}\\&=-0,020238005\approx-0,020 \\ \\
+R_{bG}&= \frac{1+\psi_{b\sigma K}-2\cdot\frac{\sigma_{bWK}}{\sigma_{bFK}}}{1-\psi_{b\sigma K}} 
+\\&=\frac{1+0,1-2\cdot\frac{138,749\frac{N}{mm^2}}{523,16\frac{N}{mm^2}}}{1-0,1}
+\\&=0,6323700741\approx0,632 \\
+R_{b\sigma Kv}&<R_{bG} :\\
+\sigma_{bADK}&= \frac{\sigma_{bWK}}{1+\psi_{b\sigma K}\cdot\sigma_{mv}/\sigma_{ba}}
+\\&=\frac{114,758\frac{N}{{mm}^2}}{1+0,082\cdot\frac{64,631\frac{N}{{mm}^2}}{67,3\frac{N}{mm^2}}}\\&=106,4691374\frac{N}{mm^2}\approx\underline{106,469}\frac{N}{mm^2}
+\end{align*}
+\newpage
+\begin{align*}
+R_{t\tau Kv}&= \frac{\tau_{tmv}-\tau_{ta}}{\tau_{tmv}+\tau_{ta}}
+\\&=\frac{37,31\frac{N}{mm^2}-3,73\frac{N}{mm^2}}{37,31\frac{N}{mm^2}+3,73\frac{N}{mm^2}}
+\\&=0,8182261209\approx0,818 \\ \\
+R_{tG}&= \frac{1+\psi_{t\tau K}-2\cdot\frac{\tau_{tWK}}{\tau_{tFK}}}{1-\psi_{t\tau K}}
+\\&=\frac{1+0,079-2\cdot\frac{112,636\frac{N}{mm^2}}{320,16\frac{N}{mm^2}}}{1-0,079}
+\\&=0,4082889999\approx0,408 \\ \\
+R_{t\tau Kv}&>R_{tG} \\
+\tau_{tADK}&= \frac{\tau_{tFK}}{1+ \tau_{tmv} / \tau_{ta}}
+\\&=\frac{320,16\frac{N}{mm^2}}{1+37,31\frac{N}{mm^2}/3,73\frac{N}{mm^2}}
+\\&=20,09836257\frac{N}{mm^2}\approx\underline{29,098}\frac{N}{mm^2}
+\end{align*}
+Sicherheiten Dauerfestigkeit:
+\begin{align*}
+S_{D;zd}&=\frac{\sigma_{zdADK}}{\sigma_{zda}} \\
+&= \frac{1,401 \frac{N}{mm^2} }{0,18 \frac{N}{mm^2}} \\
+&= \underline{7,785835517} \approx 7,786 \\ \\
+S_{D;b}&=\frac{\sigma_{bADK}}{\sigma_{bda}} \\
+&= \frac{106,469 \frac{N}{mm^2} }{67,315 \frac{N}{mm^2}} \\
+&= \underline{1,581650686} \approx 1,582 \\ \\
+S_{D;t}&=\frac{\tau_{tADK}}{\tau_{tda}} \\
+&= \frac{29,098 \frac{N}{mm^2} }{3,73 \frac{N}{mm^2}} \\
+&= \underline{7,80116959} \approx 7,801 \\ \\
+S_D &= \frac{1}{\sqrt{\left(\frac{1}{S_{D;zd}}+\frac{1}{S_{D;b}}\right)^2+\left(\frac{1}{S_{D;t}}\right)^2}}
+\\&=\frac{1}{\sqrt{\left(\frac{1}{7,786}+\frac{1}{1,582}\right)^2+\left(\frac{1}{7,801}\right)^2}}
+\\&=1,296320606\approx \du{1,296}
+\end{align*}
+Sicherheiten Fließen:
+\begin{align*}
+S_{F;zd}&= \frac{\sigma_{zdFK}}{\sigma_{zdmax}} = \frac{\sigma_{zdFK}}{\sigma_{zdm} \cdot K_A}
+\\&=\frac{504,6\frac{N}{mm^2}}{1,8\frac{N}{mm^2}\cdot1,1}
+\\&=254,4520721\approx\underline{254,452} \\ \\
+S_{F;b}&= \frac{\sigma_{bFK}}{\sigma_{bmax}} = \frac{\sigma_{bFK}}{\sigma_{ba}}
+\\&=\frac{555,6\frac{N}{mm^2}}{67,3\frac{N}{mm^2}}
+\\&=8,253707528\approx\underline{8,254} \\ \\
+S_{F;t}&= \frac{\tau_{tFK}}{\tau_{tmax}} = \frac{\tau_{tFK}}{\tau_{tm} \cdot K_A}
+\\&=\frac{320,16\frac{N}{mm^2}}{37,319\frac{N}{mm^2} \cdot 1,1}
+\\&=7,799076972\approx\underline{7,799} \\ \\
+S_F &= \frac{1}{\sqrt{\left(\frac{1}{S_{F;zd}}+\frac{1}{S_{F;b}}\right)^2+\left(\frac{1}{S_{F;t}}\right)^2}}
+\\&=\frac{1}{\sqrt{\left(\frac{1}{254,452}+\frac{1}{8,254}\right)^2+\left(\frac{1}{7,799}\right)^2}}
+\\&=5,582553646\approx \du{5,583}
+\end{align*}
+\subsubsection{Verformungen}
+\subsubsection{Biegekritische Drehzahl}
+\subsubsection{Welle-Nabe-Verbindung}
+\paragraph{Passfeder Kupplung}
+\begin{itemize}
+\item $d = 45mm$
+\item $b = 14mm$
+\item $h = 9 mm$
+\item $l_tr = 22mm$
+\item $i = 1 \rightarrow \varphi = 1$
+\item $M_t = 402,07565 Nm$
+\item $K_A = 1,1$
+\item $t_1 = 5,5 mm$
+\end{itemize}
+\begin{align*}
+p_{zul} &= 0,9 \cdot R_m  \\
+&= 0,9 \cdot 580 \frac{N}{mm^2} \\
+&= \underline{522} \frac{N}{mm^2} \\ \\
+p_W &= \frac{2 \cdot M_t \cdot K_A}{d \cdot t_1 \cdot l_{tr} \cdot (i \cdot \varphi)} \\
+p_W &= \frac{2 \cdot 402.075,65 Nmm \cdot 1,1}{45mm \cdot 5,5 mm \cdot 22 mm \cdot (1 \cdot 1)} \\
+&= 162,453596 \frac{N}{mm^2} \approx \underline{162,5 \frac{N}{mm^2}} \\ \\
+p_W &< p_{zul} \rightarrow \  \du{i.O.}
+\end{align*}
+\paragraph{Passfeder Zahnrad}
+\begin{itemize}
+\item $d = 45mm$
+\item $b = 14mm$
+\item $h = 9 mm$
+\item $l_tr = 22mm$
+\item $i = 1 \rightarrow \varphi = 1$
+\item $M_t = 402,07565 Nm$
+\item $K_A = 1,1$
+\item $t_1 = 5,5 mm$
+\end{itemize}
+\begin{align*}
+p_{zul} &= 0,9 \cdot R_m  \\
+&= 0,9 \cdot 580 \frac{N}{mm^2} \\
+&= \underline{522} \frac{N}{mm^2} \\ \\
+p_W &= \frac{2 \cdot M_t \cdot K_A}{d \cdot t_1 \cdot l_{tr} \cdot (i \cdot \varphi)} \\
+p_W &= \frac{2 \cdot 402.075,65 Nmm \cdot 1,1}{45mm \cdot 5,5 mm \cdot 22 mm \cdot (1 \cdot 1)} \\
+&= 162,453596 \frac{N}{mm^2} \approx \underline{162,5 \frac{N}{mm^2}} \\ \\
+p_W &< p_{zul} \rightarrow \  \du{i.O.}
+\end{align*}
+\subsubsection{Lager}
+\paragraph{Festlager}
+\leavevmode \\
+Lager SKF 6213
+Aus SKF Katalog folgt:
+\begin{itemize}
+\item $C = 58,5 kN$
+\item $C_0 = 40,5 kN$
+\end{itemize}
+\begin{align*}
+d_{FL}&=65mm \\ \\
+F_a&=2044,38N \\\\
+F_{Fx}&=2690,97N \\\\
+F_{Fy}&=5355,81N \\\\
+F_r&=\sqrt{\left(2690,97N\right)^2+\left(5355,81N\right)^2}\approx5993,83N \\\\
+\frac{F_a}{C_0}&=\frac{2044,38N}{40500N}=0,0504781852\approx0,050 \\\\
+\end{align*}
+Lineare Regression für $e$ und $Y$ zwischen benachbarten Werten:
+\begin{align*}
+\rightarrow e&=0,252\\\\
+\frac{F_a}{F_r}&=\frac{2044,38N}{5993,83N}\approx0,341\\\\
+\frac{F_a}{F_r}&>e\\\\
+X&=0,56\\\\
+\rightarrow Y&=1,765\\\\
+P&=0,56\cdot5993,83N+1,765\cdot2044,38N\approx6.965N\\\\
+L_h&=\frac{{10}^6}{60\cdot950\frac{1}{min}}\cdot\left(\frac{58,5kN}{6,965kN}\right)^3\approx\underline{10395h}
+\end{align*}
+\paragraph{Loslager}
+\leavevmode \\
+Lager SKF N206 ECM
+Aus SKF Katalog folgt:
+\begin{itemize}
+\item $C = 44 kN$
+\item $C_0 = 36,5 kN$
+\end{itemize}
+\begin{align*}
+F_{Ly}&=6238,41N \\ \\
+F_{Lx}&=2001,96N \\ \\
+F_r&=\sqrt{\left(6238,41N\right)^2+\left(2001,96N\right)^2}\approx6551,76N \\ \\
+L_h&=\frac{{10}^6}{60\ast950\frac{1}{min}}\ast\left(\frac{44kN}{6,555176kN}\right)^\frac{10}{3}\approx\underline{10025h}
+\end{align*}
+\subsubsection{Zahnradstufe 1}
 \subsection{Nachrechnung aller Wellen, Welle-Nabe-Verbindung, Zahnradstufen und Lager mittels KissSoft}
+\subsubsection{Wellen}
+\paragraph{Eingangswelle}
+\paragraph{Zwischenwelle}
+\paragraph{Ausgangswelle}
+\subsubsection{Welle-Nabe-Verbindung}
+\paragraph{Passfeder Eingangswelle Kupplung}
+\paragraph{Passfeder Ritzel Stufe 1}
+\paragraph{Passfeder Rad Stufe 1}
+\paragraph{Passfeder Ritzel Stufe 2}
+\paragraph{Passfeder Rad Stufe 2}
+\paragraph{Passfeder Kupplung Ausgangswelle}
+\subsubsection{Zahnradstufen}
+\paragraph{Stufe 1}
+\paragraph{Stufe 2}
+\subsubsection{Lager}
+\paragraph{Loslager Eingangswelle}
+\paragraph{Festlager Eingangswelle}
+\paragraph{Loslager Zwischenwelle}
+\paragraph{Festlager Zwischenwelle}
+\paragraph{Loslager Ausgangswelle}
+\paragraph{Festlager Augangswelle}
 \subsection{Vergleich Handrechnung und KissSoft}
+\subsubsection{Handrechnung Zahnräder}
+\subsubsection{Vergleich}
 \subsection{Wirkungsgradabschätzung}
 
 

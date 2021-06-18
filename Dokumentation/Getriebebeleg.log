@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (MiKTeX 21.2) (preloaded format=pdflatex 2021.3.6)  19 MAY 2021 14:16
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (MiKTeX 21.2) (preloaded format=pdflatex 2021.3.6)  17 JUN 2021 22:39
 entering extended mode
 **./Getriebebeleg.tex
 (Getriebebeleg.tex
@@ -449,12 +449,48 @@ File: pgfmodulematrix.code.tex 2020/12/27 v3.1.8b (3.1.8b)
 zlibrarytopaths.code.tex
 File: tikzlibrarytopaths.code.tex 2020/12/27 v3.1.8b (3.1.8b)
 )))
-(C:\Program Files (x86)\MikTex\tex/latex/stanli\stanli.sty
-Package: stanli 
+(C:\Program Files (x86)\MikTex\tex/latex/pdfpages\pdfpages.sty
+Package: pdfpages 2021/03/06 v0.5t Insert pages of external PDF documents (AM)
 
 (C:\Program Files (x86)\MikTex\tex/latex/base\ifthen.sty
 Package: ifthen 2014/09/29 v1.1c Standard LaTeX ifthen package (DPC)
 )
+(C:\Program Files (x86)\MikTex\tex/latex/latex-tools\calc.sty
+Package: calc 2017/05/25 v4.3 Infix arithmetic (KKT,FJ)
+\calc@Acount=\count288
+\calc@Bcount=\count289
+\calc@Adimen=\dimen257
+\calc@Bdimen=\dimen258
+\calc@Askip=\skip55
+\calc@Bskip=\skip56
+LaTeX Info: Redefining \setlength on input line 80.
+LaTeX Info: Redefining \addtolength on input line 81.
+\calc@Ccount=\count290
+\calc@Cskip=\skip57
+)
+(C:\Program Files (x86)\MikTex\tex/latex/eso-pic\eso-pic.sty
+Package: eso-pic 2020/10/14 v3.0a eso-pic (RN)
+\ESO@tempdima=\dimen259
+\ESO@tempdimb=\dimen260
+)
+\AM@pagewidth=\dimen261
+\AM@pageheight=\dimen262
+\AM@fboxrule=\dimen263
+
+(C:\Program Files (x86)\MikTex\tex/latex/pdfpages\pppdftex.def
+File: pppdftex.def 2021/03/06 v0.5t Pdfpages driver for pdfTeX (AM)
+)
+\pdfpages@includegraphics@status=\count291
+\AM@pagebox=\box60
+\AM@global@opts=\toks41
+\AM@pagecnt=\count292
+\AM@toc@title=\toks42
+\c@AM@survey=\count293
+\AM@templatesizebox=\box61
+)
+(C:\Program Files (x86)\MikTex\tex/latex/stanli\stanli.sty
+Package: stanli 
+
 (C:\Program Files (x86)\MikTex\tex/latex/xargs\xargs.sty
 Package: xargs 2008/03/22 v1.1  extended macro definitions  (mpg)
 
@@ -463,15 +499,15 @@ Package: xkeyval 2020/11/20 v2.8 package option processing (HA)
 
 (C:\Program Files (x86)\MikTex\tex/generic/xkeyval\xkeyval.tex
 (C:\Program Files (x86)\MikTex\tex/generic/xkeyval\xkvutils.tex
-\XKV@toks=\toks41
-\XKV@tempa@toks=\toks42
+\XKV@toks=\toks43
+\XKV@tempa@toks=\toks44
 )
-\XKV@depth=\count288
+\XKV@depth=\count294
 File: xkeyval.tex 2014/12/03 v2.7a key=value parser (HA)
 ))
-\xargs@max=\count289
-\xargs@toksa=\toks43
-\xargs@toksb=\toks44
+\xargs@max=\count295
+\xargs@toksa=\toks45
+\xargs@toksb=\toks46
 )
 (C:\Program Files (x86)\MikTex\tex/generic/pgf/frontendlayer/tikz/libraries\tik
 zlibraryshapes.code.tex
@@ -520,26 +556,26 @@ File: tikzlibraryshapes.multipart.code.tex 2020/12/27 v3.1.8b (3.1.8b)
 (C:\Program Files (x86)\MikTex\tex/generic/pgf/libraries/shapes\pgflibraryshape
 s.multipart.code.tex
 File: pgflibraryshapes.multipart.code.tex 2020/12/27 v3.1.8b (3.1.8b)
-\pgfnodepartlowerbox=\box60
-\pgfnodeparttwobox=\box61
-\pgfnodepartthreebox=\box62
-\pgfnodepartfourbox=\box63
-\pgfnodeparttwentybox=\box64
-\pgfnodepartnineteenbox=\box65
-\pgfnodeparteighteenbox=\box66
-\pgfnodepartseventeenbox=\box67
-\pgfnodepartsixteenbox=\box68
-\pgfnodepartfifteenbox=\box69
-\pgfnodepartfourteenbox=\box70
-\pgfnodepartthirteenbox=\box71
-\pgfnodeparttwelvebox=\box72
-\pgfnodepartelevenbox=\box73
-\pgfnodeparttenbox=\box74
-\pgfnodepartninebox=\box75
-\pgfnodeparteightbox=\box76
-\pgfnodepartsevenbox=\box77
-\pgfnodepartsixbox=\box78
-\pgfnodepartfivebox=\box79
+\pgfnodepartlowerbox=\box62
+\pgfnodeparttwobox=\box63
+\pgfnodepartthreebox=\box64
+\pgfnodepartfourbox=\box65
+\pgfnodeparttwentybox=\box66
+\pgfnodepartnineteenbox=\box67
+\pgfnodeparteighteenbox=\box68
+\pgfnodepartseventeenbox=\box69
+\pgfnodepartsixteenbox=\box70
+\pgfnodepartfifteenbox=\box71
+\pgfnodepartfourteenbox=\box72
+\pgfnodepartthirteenbox=\box73
+\pgfnodeparttwelvebox=\box74
+\pgfnodepartelevenbox=\box75
+\pgfnodeparttenbox=\box76
+\pgfnodepartninebox=\box77
+\pgfnodeparteightbox=\box78
+\pgfnodepartsevenbox=\box79
+\pgfnodepartsixbox=\box80
+\pgfnodepartfivebox=\box81
 )))
 (C:\Program Files (x86)\MikTex\tex/generic/pgf/frontendlayer/tikz/libraries\tik
 zlibraryarrows.code.tex
@@ -548,7 +584,7 @@ File: tikzlibraryarrows.code.tex 2020/12/27 v3.1.8b (3.1.8b)
 (C:\Program Files (x86)\MikTex\tex/generic/pgf/libraries\pgflibraryarrows.code.
 tex
 File: pgflibraryarrows.code.tex 2020/12/27 v3.1.8b (3.1.8b)
-\arrowsize=\dimen257
+\arrowsize=\dimen264
 ))
 (C:\Program Files (x86)\MikTex\tex/generic/pgf/frontendlayer/tikz/libraries\tik
 zlibrarypositioning.code.tex
@@ -556,8 +592,8 @@ File: tikzlibrarypositioning.code.tex 2020/12/27 v3.1.8b (3.1.8b)
 )
 (C:\Program Files (x86)\MikTex\tex/latex/latex-tools\verbatim.sty
 Package: verbatim 2020-07-07 v1.5u LaTeX2e package for verbatim enhancements
-\every@verbatim=\toks45
-\verbatim@line=\toks46
+\every@verbatim=\toks47
+\verbatim@line=\toks48
 \verbatim@in@stream=\read4
 )
 (C:\Program Files (x86)\MikTex\tex/generic/pgf/frontendlayer/tikz/libraries\tik
@@ -578,16 +614,16 @@ zlibrarydecorations.pathreplacing.code.tex
 zlibrarydecorations.code.tex
 (C:\Program Files (x86)\MikTex\tex/generic/pgf/modules\pgfmoduledecorations.cod
 e.tex
-\pgfdecoratedcompleteddistance=\dimen258
-\pgfdecoratedremainingdistance=\dimen259
-\pgfdecoratedinputsegmentcompleteddistance=\dimen260
-\pgfdecoratedinputsegmentremainingdistance=\dimen261
-\pgf@decorate@distancetomove=\dimen262
-\pgf@decorate@repeatstate=\count290
-\pgfdecorationsegmentamplitude=\dimen263
-\pgfdecorationsegmentlength=\dimen264
+\pgfdecoratedcompleteddistance=\dimen265
+\pgfdecoratedremainingdistance=\dimen266
+\pgfdecoratedinputsegmentcompleteddistance=\dimen267
+\pgfdecoratedinputsegmentremainingdistance=\dimen268
+\pgf@decorate@distancetomove=\dimen269
+\pgf@decorate@repeatstate=\count296
+\pgfdecorationsegmentamplitude=\dimen270
+\pgfdecorationsegmentlength=\dimen271
 )
-\tikz@lib@dec@box=\box80
+\tikz@lib@dec@box=\box82
 )
 (C:\Program Files (x86)\MikTex\tex/generic/pgf/libraries/decorations\pgflibrary
 decorations.pathreplacing.code.tex))
@@ -613,44 +649,55 @@ File: pgflibraryplotmarks.code.tex 2020/12/27 v3.1.8b (3.1.8b)
 ))
 (C:\Program Files (x86)\MikTex\tex/latex/l3backend\l3backend-pdftex.def
 File: l3backend-pdftex.def 2021-02-18 L3 backend support: PDF output (pdfTeX)
-\l__color_backend_stack_int=\count291
-\l__pdf_internal_box=\box81
+\l__color_backend_stack_int=\count297
+\l__pdf_internal_box=\box83
 )
 (Getriebebeleg.aux)
 \openout1 = `Getriebebeleg.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 16.
-LaTeX Font Info:    ... okay on input line 16.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 16.
-LaTeX Font Info:    ... okay on input line 16.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 16.
-LaTeX Font Info:    ... okay on input line 16.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 16.
-LaTeX Font Info:    ... okay on input line 16.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 16.
-LaTeX Font Info:    ... okay on input line 16.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 16.
-LaTeX Font Info:    ... okay on input line 16.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 16.
-LaTeX Font Info:    ... okay on input line 16.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 21.
+LaTeX Font Info:    ... okay on input line 21.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 21.
+LaTeX Font Info:    ... okay on input line 21.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 21.
+LaTeX Font Info:    ... okay on input line 21.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 21.
+LaTeX Font Info:    ... okay on input line 21.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 21.
+LaTeX Font Info:    ... okay on input line 21.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 21.
+LaTeX Font Info:    ... okay on input line 21.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 21.
+LaTeX Font Info:    ... okay on input line 21.
 
 (C:\Program Files (x86)\MikTex\tex/context/base/mkii\supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count292
-\scratchdimen=\dimen265
-\scratchbox=\box82
-\nofMPsegments=\count293
-\nofMParguments=\count294
-\everyMPshowfont=\toks47
-\MPscratchCnt=\count295
-\MPscratchDim=\dimen266
-\MPnumerator=\count296
-\makeMPintoPDFobject=\count297
-\everyMPtoPDFconversion=\toks48
+\scratchcounter=\count298
+\scratchdimen=\dimen272
+\scratchbox=\box84
+\nofMPsegments=\count299
+\nofMParguments=\count300
+\everyMPshowfont=\toks49
+\MPscratchCnt=\count301
+\MPscratchDim=\dimen273
+\MPnumerator=\count302
+\makeMPintoPDFobject=\count303
+\everyMPtoPDFconversion=\toks50
 ) (C:\Program Files (x86)\MikTex\tex/latex/epstopdf-pkg\epstopdf-base.sty
 Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
 Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
 85.
+)
+(C:\Program Files (x86)\MikTex\tex/latex/pdflscape\pdflscape.sty
+Package: pdflscape 2019/12/05 v0.12 Display of landscape pages in PDF (HO)
+
+(C:\Program Files (x86)\MikTex\tex/generic/iftex\iftex.sty
+Package: iftex 2020/03/06 v1.0d TeX engine tests
+)
+(C:\Program Files (x86)\MikTex\tex/latex/graphics\lscape.sty
+Package: lscape 2020/05/28 v3.02 Landscape Pages (DPC)
+)
+Package pdflscape Info: Auto-detected driver: pdftex on input line 81.
 )
 (Getriebebeleg.toc
 LaTeX Font Info:    Trying to load font information for U+msa on input line 3.
@@ -667,43 +714,219 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 
  [1
 
-{C:/Users/Moritz/AppData/Local/MiKTeX/pdftex/config/pdftex.map}] [2] [3] [4] [5
-]
-Underfull \hbox (badness 10000) in paragraph at lines 135--137
+{C:/Users/Moritz/AppData/Local/MiKTeX/pdftex/config/pdftex.map}]
+<Getriebe_Schnitt.pdf, id=11, 3383.0389pt x 2392.87971pt>
+File: Getriebe_Schnitt.pdf Graphic file (type pdf)
+<use Getriebe_Schnitt.pdf>
+Package pdftex.def Info: Getriebe_Schnitt.pdf  used on input line 28.
+(pdftex.def)             Requested size: 390.0pt x 275.85086pt.
+ [2 <./Getriebe_Schnitt.pdf>]
+<Getriebe_Draufsicht.pdf, id=22, 3383.0389pt x 2392.87971pt>
+File: Getriebe_Draufsicht.pdf Graphic file (type pdf)
+<use Getriebe_Draufsicht.pdf>
+Package pdftex.def Info: Getriebe_Draufsicht.pdf  used on input line 31.
+(pdftex.def)             Requested size: 390.0pt x 275.85086pt.
+<Getriebe_Vorderansicht.pdf, id=23, 3383.0389pt x 2392.87971pt>
+File: Getriebe_Vorderansicht.pdf Graphic file (type pdf)
+<use Getriebe_Vorderansicht.pdf>
+Package pdftex.def Info: Getriebe_Vorderansicht.pdf  used on input line 33.
+(pdftex.def)             Requested size: 390.0pt x 275.85086pt.
+<Zwischenwelle_Zeichnung.pdf, id=24, 1690.09421pt x 1195.02466pt>
+File: Zwischenwelle_Zeichnung.pdf Graphic file (type pdf)
+<use Zwischenwelle_Zeichnung.pdf>
+Package pdftex.def Info: Zwischenwelle_Zeichnung.pdf  used on input line 35.
+(pdftex.def)             Requested size: 390.0pt x 275.76161pt.
+
+[3 <./Getriebe_Draufsicht.pdf> <./Getriebe_Vorderansicht.pdf>]
+<Stueckliste.pdf, id=40, page=1, 597.55246pt x 845.07718pt>
+File: Stueckliste.pdf Graphic file (type pdf)
+<use Stueckliste.pdf, page 1>
+Package pdftex.def Info: Stueckliste.pdf , page1 used on input line 37.
+(pdftex.def)             Requested size: 390.0pt x 551.56316pt.
+ [4 <./Zwischenwelle_Zeichnung.pdf>] [5 <./Stueckliste.pdf>]
+<Stueckliste.pdf, id=63, page=2, 597.55246pt x 845.07718pt>
+File: Stueckliste.pdf Graphic file (type pdf)
+<use Stueckliste.pdf, page 2>
+Package pdftex.def Info: Stueckliste.pdf , page2 used on input line 39.
+(pdftex.def)             Requested size: 390.0pt x 551.56316pt.
+ [6 <./Stueckliste.pdf>]
+<Stueckliste.pdf, id=81, page=3, 597.55246pt x 845.07718pt>
+File: Stueckliste.pdf Graphic file (type pdf)
+<use Stueckliste.pdf, page 3>
+Package pdftex.def Info: Stueckliste.pdf , page3 used on input line 41.
+(pdftex.def)             Requested size: 390.0pt x 551.56316pt.
+ [7 <./Stueckliste.pdf>] [8]
+Underfull \hbox (badness 10000) in paragraph at lines 79--82
 
  []
 
-[6] [7] [8]
-Overfull \hbox (7.49161pt too wide) in paragraph at lines 203--203
+[9]
+Underfull \hbox (badness 10000) in paragraph at lines 107--110
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 123--125
+
+ []
+
+[10]
+Underfull \hbox (badness 10000) in paragraph at lines 143--145
+
+ []
+
+[11]
+Underfull \hbox (badness 10000) in paragraph at lines 158--160
+
+ []
+
+[12]
+Underfull \hbox (badness 10000) in paragraph at lines 178--180
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 192--193
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 192--193
+
+ []
+
+[13] [14]
+Underfull \hbox (badness 10000) in paragraph at lines 229--231
+
+ []
+
+
+LaTeX Warning: Command \" invalid in math mode on input line 249.
+
+Missing character: There is no ä in font cmr12!
+
+LaTeX Warning: Command \" invalid in math mode on input line 249.
+
+Missing character: There is no ä in font cmr12!
+[15]
+Underfull \hbox (badness 10000) in paragraph at lines 257--259
+
+ []
+
+
+LaTeX Warning: Command \" invalid in math mode on input line 277.
+
+Missing character: There is no ä in font cmr12!
+
+LaTeX Warning: Command \" invalid in math mode on input line 277.
+
+Missing character: There is no ä in font cmr12!
+[16]
+Underfull \hbox (badness 10000) in paragraph at lines 284--286
+
+ []
+
+[17]
+
+LaTeX Warning: Command \" invalid in math mode on input line 304.
+
+Missing character: There is no ä in font cmr12!
+
+LaTeX Warning: Command \" invalid in math mode on input line 304.
+
+Missing character: There is no ä in font cmr12!
+
+Underfull \hbox (badness 10000) in paragraph at lines 311--313
+
+ []
+
+[18]
+
+LaTeX Warning: Command \" invalid in math mode on input line 331.
+
+Missing character: There is no ä in font cmr12!
+
+LaTeX Warning: Command \" invalid in math mode on input line 331.
+
+Missing character: There is no ä in font cmr12!
+
+Underfull \hbox (badness 10000) in paragraph at lines 339--341
+
+ []
+
+[19]
+
+LaTeX Warning: Command \" invalid in math mode on input line 359.
+
+Missing character: There is no ä in font cmr12!
+
+LaTeX Warning: Command \" invalid in math mode on input line 359.
+
+Missing character: There is no ä in font cmr12!
+
+Underfull \hbox (badness 10000) in paragraph at lines 367--369
+
+ []
+
+[20]
+
+LaTeX Warning: Command \" invalid in math mode on input line 387.
+
+Missing character: There is no ä in font cmr12!
+
+LaTeX Warning: Command \" invalid in math mode on input line 387.
+
+Missing character: There is no ä in font cmr12!
+[21]
+Overfull \hbox (76.46735pt too wide) detected at line 436
+[]
+ []
+
+[22] [23] [24] [25]
+Overfull \vbox (56.06647pt too high) has occurred while \output is active []
+
+
+[26] [27] [28] [29] [30] [31] [32] [33] [34] [35]
+Overfull \vbox (6.15901pt too high) has occurred while \output is active []
+
+
+[36]
+Overfull \vbox (56.2078pt too high) has occurred while \output is active []
+
+
+[37] [38] [39] [40] [41] [42] [43] [44] [45] [46]
+Overfull \hbox (7.49161pt too wide) in paragraph at lines 823--823
 []\T1/cmr/bx/n/14.4 Nachrechnung al-ler Wel-len, Welle-Nabe-Verbindung,
  []
 
-[9] (Getriebebeleg.aux) ) 
+[47] [48] (Getriebebeleg.aux) ) 
 Here is how much of TeX's memory you used:
- 17739 strings out of 479334
- 374536 string characters out of 2864126
- 714199 words of memory out of 3000000
- 34830 multiletter control sequences out of 15000+200000
+ 18567 strings out of 479334
+ 388300 string characters out of 2864126
+ 737405 words of memory out of 3000000
+ 35627 multiletter control sequences out of 15000+200000
  413040 words of font info for 52 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 113i,14n,116p,416b,214s stack positions out of 5000i,500n,10000p,200000b,50000s
- <C:\Users\Moritz\AppData\Local\MiKTeX\fonts/pk/ljfour
-/jknappen/ec/dpi600\tcrm1200.pk> <C:\Users\Moritz\AppData\Local\MiKTeX\fonts/pk
-/ljfour/jknappen/ec/dpi600\ecbx1440.pk> <C:\Users\Moritz\AppData\Local\MiKTeX\f
-onts/pk/ljfour/jknappen/ec/dpi600\ecrm1200.pk> <C:\Users\Moritz\AppData\Local\M
-iKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecbx1200.pk> <C:\Users\Moritz\AppData\
-Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecbx1728.pk><C:/Program Files (
-x86)/MikTex/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Program Files (x86)/M
-ikTex/fonts/type1/public/amsfonts/cm/cmmi12.pfb><C:/Program Files (x86)/MikTex/
-fonts/type1/public/amsfonts/cm/cmmi8.pfb><C:/Program Files (x86)/MikTex/fonts/t
-ype1/public/amsfonts/cm/cmr12.pfb><C:/Program Files (x86)/MikTex/fonts/type1/pu
-blic/amsfonts/cm/cmr6.pfb><C:/Program Files (x86)/MikTex/fonts/type1/public/ams
-fonts/cm/cmr8.pfb><C:/Program Files (x86)/MikTex/fonts/type1/public/amsfonts/cm
-/cmsy10.pfb><C:/Program Files (x86)/MikTex/fonts/type1/public/amsfonts/cm/cmsy6
-.pfb><C:/Program Files (x86)/MikTex/fonts/type1/public/amsfonts/cm/cmsy8.pfb>
-Output written on Getriebebeleg.pdf (9 pages, 166298 bytes).
+ 113i,14n,116p,419b,220s stack positions out of 5000i,500n,10000p,200000b,50000s
+ <C:\Users\Moritz\AppData\Local\MiKTeX\fonts/pk/
+ljfour/jknappen/ec/dpi600\tcrm1200.pk> <C:\Users\Moritz\AppData\Local\MiKTeX\fo
+nts/pk/ljfour/jknappen/ec/dpi600\ecbx1440.pk> <C:\Users\Moritz\AppData\Local\Mi
+KTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm1200.pk> <C:\Users\Moritz\AppData\L
+ocal\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecbx1200.pk> <C:\Users\Moritz\Ap
+pData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecbx1728.pk><C:/Program F
+iles (x86)/MikTex/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Program Files (
+x86)/MikTex/fonts/type1/public/amsfonts/cmextra/cmex8.pfb><C:/Program Files (x8
+6)/MikTex/fonts/type1/public/amsfonts/cm/cmmi12.pfb><C:/Program Files (x86)/Mik
+Tex/fonts/type1/public/amsfonts/cm/cmmi6.pfb><C:/Program Files (x86)/MikTex/fon
+ts/type1/public/amsfonts/cm/cmmi8.pfb><C:/Program Files (x86)/MikTex/fonts/type
+1/public/amsfonts/cm/cmr12.pfb><C:/Program Files (x86)/MikTex/fonts/type1/publi
+c/amsfonts/cm/cmr6.pfb><C:/Program Files (x86)/MikTex/fonts/type1/public/amsfon
+ts/cm/cmr8.pfb><C:/Program Files (x86)/MikTex/fonts/type1/public/amsfonts/cm/cm
+sy10.pfb><C:/Program Files (x86)/MikTex/fonts/type1/public/amsfonts/cm/cmsy6.pf
+b><C:/Program Files (x86)/MikTex/fonts/type1/public/amsfonts/cm/cmsy8.pfb>
+Output written on Getriebebeleg.pdf (48 pages, 1319792 bytes).
 PDF statistics:
- 255 PDF objects out of 1000 (max. 8388607)
+ 481 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
- 13 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 48 words of extra memory for PDF output out of 10000 (max. 10000000)
 

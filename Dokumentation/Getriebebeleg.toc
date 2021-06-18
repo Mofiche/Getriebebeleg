@@ -1,19 +1,69 @@
 \babel@toc {ngerman}{}
 \contentsline {section}{\numberline {1}Zeichnungsdokumentation}{2}{}%
 \contentsline {subsection}{\numberline {1.1}Zusammenbauzeichnungen}{2}{}%
-\contentsline {subsection}{\numberline {1.2}Fertigungszeichnung Zwischenwelle}{2}{}%
-\contentsline {subsection}{\numberline {1.3}Stückliste}{2}{}%
-\contentsline {section}{\numberline {2}Montageanleitung}{2}{}%
-\contentsline {section}{\numberline {3}Berechnung}{2}{}%
-\contentsline {subsection}{\numberline {3.1}Entwurfsrechnung per Hand}{2}{}%
-\contentsline {subsubsection}{\numberline {3.1.1}Überschlägiger Wellendurchmesser}{2}{}%
-\contentsline {subsubsection}{\numberline {3.1.2}Modulabschätzung}{3}{}%
-\contentsline {subsubsection}{\numberline {3.1.3}Mindestteilkreisdurchmesser}{4}{}%
-\contentsline {subsubsection}{\numberline {3.1.4}Mindestzähnezahlen}{5}{}%
-\contentsline {subsubsection}{\numberline {3.1.5}Aufteilung Übersetzungsverhältnis und Auswahl Zähnezahlen}{5}{}%
-\contentsline {subsubsection}{\numberline {3.1.6}Achsabstände}{7}{}%
-\contentsline {subsubsection}{\numberline {3.1.7}Profilverschiebung}{7}{}%
-\contentsline {subsection}{\numberline {3.2}Nachrechnung Antriebswelle per Hand}{9}{}%
-\contentsline {subsection}{\numberline {3.3}Nachrechnung aller Wellen, Welle-Nabe-Verbindung, Zahnradstufen und Lager mittels KissSoft}{9}{}%
-\contentsline {subsection}{\numberline {3.4}Vergleich Handrechnung und KissSoft}{9}{}%
-\contentsline {subsection}{\numberline {3.5}Wirkungsgradabschätzung}{9}{}%
+\contentsline {subsection}{\numberline {1.2}Fertigungszeichnung Zwischenwelle}{4}{}%
+\contentsline {subsection}{\numberline {1.3}Stückliste}{5}{}%
+\contentsline {section}{\numberline {2}Montageanleitung}{8}{}%
+\contentsline {section}{\numberline {3}Berechnung}{8}{}%
+\contentsline {subsection}{\numberline {3.1}Entwurfsrechnung per Hand}{8}{}%
+\contentsline {subsubsection}{\numberline {3.1.1}Überschlägiger Wellendurchmesser}{8}{}%
+\contentsline {subsubsection}{\numberline {3.1.2}Zahnräder}{9}{}%
+\contentsline {paragraph}{\numberline {3.1.2.1}Modulabschätzung}{9}{}%
+\contentsline {paragraph}{\numberline {3.1.2.2}Mindestteilkreisdurchmesser}{10}{}%
+\contentsline {paragraph}{\numberline {3.1.2.3}Mindestzähnezahlen}{10}{}%
+\contentsline {paragraph}{\numberline {3.1.2.4}Aufteilung Übersetzungsverhältnis und Auswahl Zähnezahlen}{11}{}%
+\contentsline {paragraph}{\numberline {3.1.2.5}Achsabstände}{13}{}%
+\contentsline {paragraph}{\numberline {3.1.2.6}Profilverschiebung der Zahnräder}{13}{}%
+\contentsline {subsubsection}{\numberline {3.1.3}Welle-Nabe-Verbindungen}{15}{}%
+\contentsline {paragraph}{\numberline {3.1.3.1}Passfeder Kupplung Eingangswelle}{15}{}%
+\contentsline {paragraph}{\numberline {3.1.3.2}Passfeder Ritzel Stufe 1}{16}{}%
+\contentsline {paragraph}{\numberline {3.1.3.3}Passfeder Rad Stufe 1}{17}{}%
+\contentsline {paragraph}{\numberline {3.1.3.4}Passfeder Ritzel Stufe 2}{18}{}%
+\contentsline {paragraph}{\numberline {3.1.3.5}Passfeder Rad Stufe 2}{19}{}%
+\contentsline {paragraph}{\numberline {3.1.3.6}Passfeder Kupplung Ausgangswelle}{20}{}%
+\contentsline {subsubsection}{\numberline {3.1.4}Lager}{21}{}%
+\contentsline {paragraph}{\numberline {3.1.4.1}Loslager Eingangswelle}{21}{}%
+\contentsline {paragraph}{\numberline {3.1.4.2}Festlager Eingangswelle}{21}{}%
+\contentsline {paragraph}{\numberline {3.1.4.3}Loslager Zwischenwelle}{21}{}%
+\contentsline {paragraph}{\numberline {3.1.4.4}Festlager Zwischenwelle}{21}{}%
+\contentsline {paragraph}{\numberline {3.1.4.5}Loslager Ausgangswelle}{21}{}%
+\contentsline {paragraph}{\numberline {3.1.4.6}Festlager Augangswelle}{21}{}%
+\contentsline {subsection}{\numberline {3.2}Nachrechnung Antriebswelle per Hand}{22}{}%
+\contentsline {subsubsection}{\numberline {3.2.1}Festigkeitsnachweiß an gefährdeten Stellen}{22}{}%
+\contentsline {paragraph}{\numberline {3.2.1.1}Freistich am Zahnrad Richtung Festlager}{22}{}%
+\contentsline {paragraph}{\numberline {3.2.1.2}Passfeder}{34}{}%
+\contentsline {subsubsection}{\numberline {3.2.2}Verformungen}{43}{}%
+\contentsline {subsubsection}{\numberline {3.2.3}Biegekritische Drehzahl}{43}{}%
+\contentsline {subsubsection}{\numberline {3.2.4}Welle-Nabe-Verbindung}{43}{}%
+\contentsline {paragraph}{\numberline {3.2.4.1}Passfeder Kupplung}{43}{}%
+\contentsline {paragraph}{\numberline {3.2.4.2}Passfeder Zahnrad}{44}{}%
+\contentsline {subsubsection}{\numberline {3.2.5}Lager}{45}{}%
+\contentsline {paragraph}{\numberline {3.2.5.1}Festlager}{45}{}%
+\contentsline {paragraph}{\numberline {3.2.5.2}Loslager}{46}{}%
+\contentsline {subsubsection}{\numberline {3.2.6}Zahnradstufe 1}{47}{}%
+\contentsline {subsection}{\numberline {3.3}Nachrechnung aller Wellen, Welle-Nabe-Verbindung, Zahnradstufen und Lager mittels KissSoft}{47}{}%
+\contentsline {subsubsection}{\numberline {3.3.1}Wellen}{47}{}%
+\contentsline {paragraph}{\numberline {3.3.1.1}Eingangswelle}{47}{}%
+\contentsline {paragraph}{\numberline {3.3.1.2}Zwischenwelle}{47}{}%
+\contentsline {paragraph}{\numberline {3.3.1.3}Ausgangswelle}{47}{}%
+\contentsline {subsubsection}{\numberline {3.3.2}Welle-Nabe-Verbindung}{47}{}%
+\contentsline {paragraph}{\numberline {3.3.2.1}Passfeder Eingangswelle Kupplung}{47}{}%
+\contentsline {paragraph}{\numberline {3.3.2.2}Passfeder Ritzel Stufe 1}{47}{}%
+\contentsline {paragraph}{\numberline {3.3.2.3}Passfeder Rad Stufe 1}{47}{}%
+\contentsline {paragraph}{\numberline {3.3.2.4}Passfeder Ritzel Stufe 2}{47}{}%
+\contentsline {paragraph}{\numberline {3.3.2.5}Passfeder Rad Stufe 2}{47}{}%
+\contentsline {paragraph}{\numberline {3.3.2.6}Passfeder Kupplung Ausgangswelle}{47}{}%
+\contentsline {subsubsection}{\numberline {3.3.3}Zahnradstufen}{48}{}%
+\contentsline {paragraph}{\numberline {3.3.3.1}Stufe 1}{48}{}%
+\contentsline {paragraph}{\numberline {3.3.3.2}Stufe 2}{48}{}%
+\contentsline {subsubsection}{\numberline {3.3.4}Lager}{48}{}%
+\contentsline {paragraph}{\numberline {3.3.4.1}Loslager Eingangswelle}{48}{}%
+\contentsline {paragraph}{\numberline {3.3.4.2}Festlager Eingangswelle}{48}{}%
+\contentsline {paragraph}{\numberline {3.3.4.3}Loslager Zwischenwelle}{48}{}%
+\contentsline {paragraph}{\numberline {3.3.4.4}Festlager Zwischenwelle}{48}{}%
+\contentsline {paragraph}{\numberline {3.3.4.5}Loslager Ausgangswelle}{48}{}%
+\contentsline {paragraph}{\numberline {3.3.4.6}Festlager Augangswelle}{48}{}%
+\contentsline {subsection}{\numberline {3.4}Vergleich Handrechnung und KissSoft}{48}{}%
+\contentsline {subsubsection}{\numberline {3.4.1}Handrechnung Zahnräder}{48}{}%
+\contentsline {subsubsection}{\numberline {3.4.2}Vergleich}{48}{}%
+\contentsline {subsection}{\numberline {3.5}Wirkungsgradabschätzung}{48}{}%
